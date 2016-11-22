@@ -13,12 +13,15 @@ public class Player_InputCheck : InputBehaviour {
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         KeyCheck();
 
-        if(Space)
-        { _player_Shooting.CreateBullet(); }
+        if (ArrowDown) { _player_Shooting.CreateBullet(); }
+        if (ArrowLeft) { _player_Shooting.CreateBullet(); }
+        if (ArrowRight) { _player_Shooting.CreateBullet(); }
+        if (ArrowUp) { _player_Shooting.CreateBullet(); }
+
 
         if (base.Escape)
         {

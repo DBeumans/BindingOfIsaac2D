@@ -15,6 +15,7 @@ public class Player_Shooting : MonoBehaviour {
         if(nextFire >= fireRate)
         {
             Player_Bullet newProjectile = Instantiate(_bulletPrefab, _player_muzzle.position, _player_muzzle.rotation) as Player_Bullet;
+
             nextFire = 0;
         }
        

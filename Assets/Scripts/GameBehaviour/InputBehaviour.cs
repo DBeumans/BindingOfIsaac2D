@@ -10,7 +10,10 @@ public class InputBehaviour : MonoBehaviour {
     private bool keyA = false;
     private bool keyS = false;
     private bool keyD = false;
-
+    private bool arrowLeft = false;
+    private bool arrowRight = false;
+    private bool arrowUp = false;
+    private bool arrowDown = false;
 
     private float horizontal;
     private float vertical;
@@ -20,6 +23,11 @@ public class InputBehaviour : MonoBehaviour {
     // Read only
     public bool Escape { get { return keyEscape; } }
     public bool Space { get { return keySpace; } }
+
+    public bool ArrowLeft { get { return arrowLeft; } }
+    public bool ArrowRight { get { return arrowRight; } }
+    public bool ArrowUp { get { return arrowUp; } }
+    public bool ArrowDown { get { return arrowDown; } }
     
     public bool W { get { return keyW; } }
     public bool A { get { return keyA; } }
@@ -35,6 +43,11 @@ public class InputBehaviour : MonoBehaviour {
     KeyCode _keyS = KeyCode.S;
     KeyCode _keyD = KeyCode.D;
 
+    KeyCode _arrowUp = KeyCode.UpArrow;
+    KeyCode _arrowDown = KeyCode.DownArrow;
+    KeyCode _arrowLeft = KeyCode.LeftArrow;
+    KeyCode _arrowRight = KeyCode.RightArrow;
+
     public void KeyCheck()
     {
         // Keyboard
@@ -42,5 +55,10 @@ public class InputBehaviour : MonoBehaviour {
         keyEscape = Input.GetKeyDown(_keyEscape);
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        arrowDown = Input.GetKey(_arrowDown);
+        arrowLeft = Input.GetKey(_arrowLeft);
+        arrowRight = Input.GetKey(_arrowRight);
+        arrowUp = Input.GetKey(_arrowUp);
     }
 }
