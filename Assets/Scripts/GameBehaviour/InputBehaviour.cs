@@ -13,14 +13,22 @@ public class InputBehaviour : MonoBehaviour {
     // Use the public bool to read the keystatement
 
     // Read only
-    public bool ShootKey { get { return shootbutton; } }
-    public bool EscapeKey { get { return escapeButton; } }
+    public bool Escape { get { return keyEscape; } }
+    public bool Space { get { return keySpace; } }
     
-    public float Horizontal { get { return horizontal; } }
-    public float Vertical { get { return vertical; } }
+    public bool W { get { return keyW; } }
+    public bool A { get { return keyA; } }
+    public bool S { get { return keyS; } }
+    public bool D { get { return keyD; } }
+
     // Keyboard
-    KeyCode Shootbutton = KeyCode.Space;
-    KeyCode EscapeButton = KeyCode.Escape;
+    KeyCode keySpace = KeyCode.Space;
+    KeyCode keyEscape = KeyCode.Escape;
+
+    KeyCode keyW = KeyCode.W;
+    KeyCode keyA = KeyCode.A;
+    KeyCode keyS = KeyCode.S;
+    KeyCode keyD = KeyCode.D;
 
     public void KeyCheck()
     {
