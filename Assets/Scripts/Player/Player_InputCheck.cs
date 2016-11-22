@@ -17,13 +17,14 @@ public class Player_InputCheck : InputBehaviour {
     {
         KeyCheck();
 
-        if(ShootKey)
+        if(Space)
         { _player_Shooting.CreateBullet(); }
 
-        if (base.EscapeKey)
+        if (base.Escape)
         {
             Debug.Log("pauze");
         }
+        /*
         if (base.Horizontal != 999)
         {
             Debug.Log("Horizontal: " + base.Horizontal);
@@ -32,6 +33,6 @@ public class Player_InputCheck : InputBehaviour {
         {
             Debug.Log("Vertical: " + base.Vertical);
         }
-
+        */
     }
 }

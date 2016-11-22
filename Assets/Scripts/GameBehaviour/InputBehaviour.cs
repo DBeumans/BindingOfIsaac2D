@@ -4,8 +4,13 @@ using System.Collections;
 public class InputBehaviour : MonoBehaviour {
 
     // Keyboard
-    private bool shootbutton = false;
-    private bool escapeButton = false;
+    private bool keySpace = false;
+    private bool keyEscape = false;
+    private bool keyW = false;
+    private bool keyA = false;
+    private bool keyS = false;
+    private bool keyD = false;
+
 
     private float horizontal;
     private float vertical;
@@ -22,19 +27,19 @@ public class InputBehaviour : MonoBehaviour {
     public bool D { get { return keyD; } }
 
     // Keyboard
-    KeyCode keySpace = KeyCode.Space;
-    KeyCode keyEscape = KeyCode.Escape;
+    KeyCode _keySpace = KeyCode.Space;
+    KeyCode _keyEscape = KeyCode.Escape;
 
-    KeyCode keyW = KeyCode.W;
-    KeyCode keyA = KeyCode.A;
-    KeyCode keyS = KeyCode.S;
-    KeyCode keyD = KeyCode.D;
+    KeyCode _keyW = KeyCode.W;
+    KeyCode _keyA = KeyCode.A;
+    KeyCode _keyS = KeyCode.S;
+    KeyCode _keyD = KeyCode.D;
 
     public void KeyCheck()
     {
         // Keyboard
-        shootbutton = Input.GetKeyDown(Shootbutton);
-        escapeButton = Input.GetKeyDown(EscapeButton);
+        keySpace = Input.GetKey(_keySpace);
+        keyEscape = Input.GetKeyDown(_keyEscape);
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
     }
