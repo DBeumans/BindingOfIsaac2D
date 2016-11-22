@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InputBehaviour : MonoBehaviour
-{
+public class InputBehaviour : MonoBehaviour {
 
     // Keyboard
     private bool jump = false;
