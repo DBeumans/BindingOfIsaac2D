@@ -11,7 +11,19 @@ public class MovementBehaviour : MonoBehaviour {
 	Vector2 _down = Vector2.down;
 	Vector2 _right = Vector2.right;
 
-	private float _speed = 0.3f;
+	private float _maxSpeed;
+	private float _speed = 0;
+
+	public float maxSpeed { set { _maxSpeed = value;}}
+	public float speed {
+		set {
+			if (value <= _maxSpeed) {
+				_speed = value;
+			} else {
+				_speed = _maxSpeed;
+			}
+		}
+	}
 
 	public void Up() { _velocity = _up; }
 	public void UpLeft() { _velocity = _up + _left; }
