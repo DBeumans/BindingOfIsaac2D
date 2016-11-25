@@ -53,8 +53,11 @@ public class InputBehaviour : MonoBehaviour {
         // Keyboard
         keySpace = Input.GetKey(_keySpace);
         keyEscape = Input.GetKeyDown(_keyEscape);
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+
+        keyW = Input.GetKeyDown(_keyW);
+        keyA = Input.GetKeyDown(_keyA);
+        keyS = Input.GetKeyDown(_keyS);
+        keyD = Input.GetKeyDown(_keyD);
 
         arrowDown = Input.GetKey(_arrowDown);
         arrowLeft = Input.GetKey(_arrowLeft);
