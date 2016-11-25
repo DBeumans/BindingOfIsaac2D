@@ -14,8 +14,10 @@ public class Bullet_Collision : MonoBehaviour {
     {
         if(this.gameObject.name != other.gameObject.name)
         {
-            _bullet_Destroy.DestroyBullet();
             Debug.Log("Destroyed!");
+            _bullet_Destroy.DestroyBullet();
+            
         }
     }
 }
+
