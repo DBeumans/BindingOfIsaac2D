@@ -3,15 +3,13 @@ using System.Collections;
 
 public class Player_InputCheck : InputBehaviour {
 
-    //script reference here.
+    //script reference here
 
     Player_Shooting _player_Shooting;
-    Player_Data _player_Data;
 
-    void Start()
+    void Awake()
     {
         _player_Shooting = GetComponent<Player_Shooting>();
-        _player_Data = GameObject.FindObjectOfType<Player_Data>();
     }
 
     // Update is called once per frame
@@ -22,25 +20,21 @@ public class Player_InputCheck : InputBehaviour {
         if(ArrowDown)
         {
             _player_Shooting.CreateBullet("Down");
-            _player_Data._arrowDown = true;
         }
 
         if (ArrowLeft)
         {
             _player_Shooting.CreateBullet("Left");
-            _player_Data._arrowLeft = true;
         }
 
         if (ArrowRight)
         {
             _player_Shooting.CreateBullet("Right");
-            _player_Data._arrowRight = true;
         }
 
         if (ArrowUp)
         {
             _player_Shooting.CreateBullet("Up");
-            _player_Data._arrowUp = true;
         }
 
 
@@ -58,12 +52,5 @@ public class Player_InputCheck : InputBehaviour {
             Debug.Log("Vertical: " + base.Vertical);
         }
         */
-        else
-        {
-            _player_Data._arrowUp = false;
-            _player_Data._arrowRight = false;
-            _player_Data._arrowLeft = false;
-            _player_Data._arrowDown = false;
-        }
     }
 }

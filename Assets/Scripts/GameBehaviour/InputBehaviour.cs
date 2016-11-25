@@ -25,8 +25,8 @@ public class InputBehaviour : MonoBehaviour {
     public bool Space { get { return keySpace; } }
 
     public bool ArrowLeft { get { return arrowLeft; } }
-    public bool ArrowRight { get { return arrowRight; } }
-    public bool ArrowUp { get { return arrowUp; } }
+    public bool ArrowRight { get { return arrowRight; }  }
+    public bool ArrowUp { get { return arrowUp; }  }
     public bool ArrowDown { get { return arrowDown; } }
     
     public bool W { get { return keyW; } }
