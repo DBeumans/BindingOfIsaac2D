@@ -17,7 +17,6 @@ public class Bullet_Check : MonoBehaviour {
        // Debug.Log(_bulletAnimationBehaviour.AnimationDonePlaying);
         if (_bulletAnimationBehaviour.AnimationDonePlaying)
         {
-            Debug.Log("Done with animation, now destroying...");
             _bullet_Destroy.DestroyBullet();
         }
     }

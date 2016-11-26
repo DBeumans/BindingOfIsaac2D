@@ -28,7 +28,6 @@ public class BulletAnimationBehaviour : MonoBehaviour
         {
             if (_animator.GetCurrentAnimatorClipInfo(0).Length >= _animator.GetCurrentAnimatorClipInfo(0).Length * _animator.GetCurrentAnimatorStateInfo(0).normalizedTime)
             {
-                Debug.Log("dasjkka");
                
             }
             yield return new WaitForSeconds(.70f) ;

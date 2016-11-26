@@ -15,12 +15,13 @@ public class InputBehaviour : MonoBehaviour {
     private bool arrowUp = false;
     private bool arrowDown = false;
 
-    private float horizontal;
-    private float vertical;
+    private Vector2 moveInput = new Vector2();
 
     // Use the public bool to read the keystatement
     public bool Escape { get { return keyEscape; } }
     public bool Space { get { return keySpace; } }
+
+    public Vector2 MoveInput { get { return moveInput; } }
 
     public bool ArrowLeft { get { return arrowLeft; } set { arrowLeft = value; } }
     public bool ArrowRight { get { return arrowRight; } set { arrowRight = value; }  }
@@ -51,6 +52,8 @@ public class InputBehaviour : MonoBehaviour {
         // Keyboard
         keySpace = Input.GetKey(_keySpace);
         keyEscape = Input.GetKeyDown(_keyEscape);
+
+        moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         keyW = Input.GetKeyDown(_keyW);
         keyA = Input.GetKeyDown(_keyA);

@@ -6,20 +6,20 @@ public class Player_InputCheck : InputBehaviour {
     //script reference here
 
     Player_Shooting _player_Shooting;
-    /*
-    currentarrowActive welke key is nu actief, die moet uitgevoerd worden 
-        als een andere key pressed is dan word currentarrowactive de ingedrukte key en andere arrowkeys worden false gezet.
-        */
+    Player_Shooting_Audio _player_Shooting_Audio;
     string _arrowPressed="";
     void Awake()
     {
         _player_Shooting = GetComponent<Player_Shooting>();
+        _player_Shooting_Audio = GetComponent<Player_Shooting_Audio>();
     }
 
     // Update is called once per frame
     void Update()
     {
         KeyCheck();
+
+        
 
         ArrowsCheck();
         if (base.Escape)
@@ -42,7 +42,7 @@ public class Player_InputCheck : InputBehaviour {
     {
         if (ArrowDown)
         {
-            if (_arrowPressed != "down") { _arrowPressed = "down"; }
+            if (_arrowPressed != "down") { _arrowPressed = "down";  }
             else if (_arrowPressed == "down") { _player_Shooting.CreateBullet("Down"); }
         }
 
