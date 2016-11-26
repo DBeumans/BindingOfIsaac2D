@@ -4,10 +4,12 @@ using System.Collections;
 public class Bullet_Collision : MonoBehaviour {
 
     Bullet_Destroy _bullet_Destroy;
+    BulletAnimationBehaviour _bulletAnimationBehaviour;
 
     void Start()
     {
         _bullet_Destroy = GetComponent<Bullet_Destroy>();
+        _bulletAnimationBehaviour = GetComponent<BulletAnimationBehaviour>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -15,8 +17,7 @@ public class Bullet_Collision : MonoBehaviour {
         if(this.gameObject.name != other.gameObject.name)
         {
             Debug.Log("Destroyed!");
-            _bullet_Destroy.DestroyBullet();
-            
+            _bulletAnimationBehaviour.Bullet_Destroyed();           
         }
     }
 }

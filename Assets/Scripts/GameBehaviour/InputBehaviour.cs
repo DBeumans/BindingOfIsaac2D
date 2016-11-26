@@ -19,15 +19,13 @@ public class InputBehaviour : MonoBehaviour {
     private float vertical;
 
     // Use the public bool to read the keystatement
-
-    // Read only
     public bool Escape { get { return keyEscape; } }
     public bool Space { get { return keySpace; } }
 
-    public bool ArrowLeft { get { return arrowLeft; } }
-    public bool ArrowRight { get { return arrowRight; }  }
-    public bool ArrowUp { get { return arrowUp; }  }
-    public bool ArrowDown { get { return arrowDown; } }
+    public bool ArrowLeft { get { return arrowLeft; } set { arrowLeft = value; } }
+    public bool ArrowRight { get { return arrowRight; } set { arrowRight = value; }  }
+    public bool ArrowUp { get { return arrowUp; } set { arrowUp = value; } }
+    public bool ArrowDown { get { return arrowDown; } set { arrowDown = value; } }
     
     public bool W { get { return keyW; } }
     public bool A { get { return keyA; } }
