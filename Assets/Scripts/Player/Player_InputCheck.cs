@@ -26,16 +26,6 @@ public class Player_InputCheck : InputBehaviour {
         {
             Debug.Log("pauze");
         }
-        /*
-        if (base.Horizontal != 999)
-        {
-            Debug.Log("Horizontal: " + base.Horizontal);
-        }
-        if (base.Vertical != 999)
-        {
-            Debug.Log("Vertical: " + base.Vertical);
-        }
-        */
     }
 
     void ArrowsCheck()
