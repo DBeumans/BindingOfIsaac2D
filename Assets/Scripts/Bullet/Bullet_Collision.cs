@@ -3,13 +3,11 @@ using System.Collections;
 
 public class Bullet_Collision : MonoBehaviour {
 
-    Bullet_Destroy _bullet_Destroy;
     BulletAnimationBehaviour _bulletAnimationBehaviour;
     Bullet_AudioManager _bullet_AudioManager;
 
     void Start()
     {
-        _bullet_Destroy = GetComponent<Bullet_Destroy>();
         _bulletAnimationBehaviour = GetComponent<BulletAnimationBehaviour>();
         _bullet_AudioManager = GetComponent<Bullet_AudioManager>();
     }

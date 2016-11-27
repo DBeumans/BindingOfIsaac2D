@@ -6,12 +6,10 @@ public class Player_InputCheck : InputBehaviour {
     //script reference here
 
     Player_Shooting _player_Shooting;
-    Player_Shooting_Audio _player_Shooting_Audio;
     string _arrowPressed="";
     void Awake()
     {
         _player_Shooting = GetComponent<Player_Shooting>();
-        _player_Shooting_Audio = GetComponent<Player_Shooting_Audio>();
     }
 
     // Update is called once per frame
