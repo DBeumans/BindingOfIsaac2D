@@ -3,10 +3,9 @@ using System.Collections;
 
 public class Spawner : MonoBehaviour {
 
-    public void ObjectSpawner(GameObject[] gameObject, Transform spawnPoints)
+    public void ObjectSpawner(GameObject gameObject, Transform spawnPoints)
     {
-        int SpawnObject = Random.Range(0, gameObject.Length);
-        Instantiate(gameObject[SpawnObject], spawnPoints.position, spawnPoints.rotation);
+        Instantiate(gameObject, spawnPoints.position, spawnPoints.rotation);
     }
 
 }
