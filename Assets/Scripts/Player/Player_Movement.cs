@@ -2,42 +2,26 @@
 using System.Collections;
 
 public class Player_Movement : MonoBehaviour {
-
+    SpeedBehaviour _slowMovement;
+    Rigidbody2D _rigidbody2D;
+    InputBehaviour _keyInput;
+    
     float _movementSpeed = 5f;
+    Vector2 _moveInput;
     Vector2 _velocity;
 
-    Rigidbody2D _rigidbody2D;
-
-    Vector3 _moveInput;
-
-    float _horizontal;
-    float _vertical;
-
-    void Start()
-    {
+    void Start() {
+        _slowMovement = GetComponent<SpeedBehaviour>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        StartCoroutine(SlowMovement());
+        _keyInput = GetComponent<InputBehaviour>();
+        _slowMovement.startCoroutine();
     }
 
-    void FixedUpdate()
-    {
-
-        _horizontal = Input.GetAxisRaw("Horizontal");
-        _vertical = Input.GetAxisRaw("Vertical");
-
-        _moveInput = new Vector3(_horizontal, _vertical,0f)  ;
-
+    void FixedUpdate() {
+        _keyInput.KeyCheck();
+        _moveInput = _keyInput.MoveInput;
         _rigidbody2D.AddForce(_moveInput * _movementSpeed);
-        
-    }
-
-    IEnumerator SlowMovement()
-    {
-        while(true)
-        {
-            _rigidbody2D.velocity = _rigidbody2D.velocity * 0.9f;
-            yield return new WaitForSeconds(.025f);
-        }
-
+        _slowMovement.rigidbody2D = _rigidbody2D;
+        _rigidbody2D.velocity = _slowMovement.rigidbodyVelocity2D;
     }
 }
