@@ -13,7 +13,6 @@ public class Player_Data : MonoBehaviour {
     public bool _arrowLeft;
     public bool _arrowRight;
     public bool _arrowUp;
-    public bool _arrowDown;
-    
+    public bool _arrowDow;
 
 }

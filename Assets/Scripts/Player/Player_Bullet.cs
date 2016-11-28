@@ -14,10 +14,12 @@ public class Player_Bullet : MonoBehaviour {
     public string Direction;
 
     BulletAnimationBehaviour _bulletAnimationBehaviour;
+    Player_InputCheck _player_InputCheck;
 
     void Start()
     {
         _bulletAnimationBehaviour = GetComponent<BulletAnimationBehaviour>();
+        _player_InputCheck = GameObject.FindObjectOfType<Player_InputCheck>();
     }
     void Update() { if (_bulletAnimationBehaviour.AnimationIsPlaying) { _bulletTravelSpeed = 0f; } }
     void FixedUpdate()
@@ -51,17 +53,18 @@ public class Player_Bullet : MonoBehaviour {
     void Movement()
     {
             if (_left)
-            { transform.Translate(Vector2.left * _bulletTravelSpeed * Time.deltaTime); }
+            { transform.Translate(Vector2.left *_bulletTravelSpeed * Time.deltaTime); }
 
             if (_right)
-            { transform.Translate(Vector2.right * _bulletTravelSpeed * Time.deltaTime); }
+            { transform.Translate(Vector2.right   * _bulletTravelSpeed * Time.deltaTime); }
 
             if (_down)
-            { transform.Translate(Vector2.down * _bulletTravelSpeed * Time.deltaTime); }
+            { transform.Translate(Vector2.down   * _bulletTravelSpeed * Time.deltaTime); }
 
             if (_up)
-            { transform.Translate(Vector2.up * _bulletTravelSpeed * Time.deltaTime); }
+            { transform.Translate(Vector2.up   * _bulletTravelSpeed * Time.deltaTime); }
 
 
     }
+
 }

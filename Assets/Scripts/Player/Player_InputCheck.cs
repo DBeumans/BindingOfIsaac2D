@@ -16,9 +16,6 @@ public class Player_InputCheck : InputBehaviour {
     void Update()
     {
         KeyCheck();
-
-        
-
         ArrowsCheck();
         if (base.Escape)
         {
@@ -51,5 +48,10 @@ public class Player_InputCheck : InputBehaviour {
             if (_arrowPressed != "up") { _arrowPressed = "up"; }
             else if (_arrowPressed == "up") { _player_Shooting.CreateBullet("Up"); }
         }
+    }
+
+    void Player_DirectionCheck()
+    {
+
     }
 }
