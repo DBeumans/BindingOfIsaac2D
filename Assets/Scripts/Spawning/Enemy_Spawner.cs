@@ -19,12 +19,17 @@ public class Enemy_Spawner : Spawner {
 
     void Spawn()
     {
-        _enemy = _enemies[1];
-        for (int i = 0; i < _spawnPoints.Length; i++)
+
+        for (int j = 0; j < _spawnPoints.Length; j++)
         {
-            _points = _spawnPoints[i];
+            _points = _spawnPoints[j];
+            _enemy = _enemies[Random.Range(0, _enemies.Length)];
+            if(_points == _spawnPoints[5])
+            {
+                _enemy = _enemies[1];
+            }
+            ObjectSpawner(_enemy, _points);
         }
-        ObjectSpawner(_enemy, _points);
         
     }
 }
