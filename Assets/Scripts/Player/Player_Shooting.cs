@@ -22,13 +22,15 @@ public class Player_Shooting : MonoBehaviour {
         nextFire += Time.deltaTime;
         if(nextFire >= fireRate)
         {
-            _player_Shooting_Animation.PlayAnimation(pos);
+            _player_Shooting_Animation.PlayerShooting = true;
             Player_Bullet newProjectile = Instantiate(_bulletPrefab, _player_muzzle.position, _player_muzzle.rotation) as Player_Bullet;
             _player_Shooting_Audio.Audio();
             Player_Bullet bullet = GameObject.FindObjectOfType<Player_Bullet>();
             bullet.Direction = pos;
             nextFire = 0;
+            
         }
+        
         
     }
 }

@@ -18,10 +18,6 @@ public class Player_Movement_Animation : MonoBehaviour {
     void Update()
     {
         _inputBehaviour.KeyCheck();
-    }
-
-    void FixedUpdate()
-    {
         Animation();
     }
 
@@ -29,25 +25,14 @@ public class Player_Movement_Animation : MonoBehaviour {
     {
         _horizontal = _inputBehaviour.Horizontal;
         _vertical = _inputBehaviour.Vertical;
-        Debug.Log("Horizontal: " + _horizontal + " Vertical: " + _vertical);
 
-        _animator.SetFloat("WalkVertical", _vertical );
-        _animator.SetFloat("WalkHorizontal",Mathf.Abs( _horizontal));
+        _animator.SetFloat("WalkVertical",  _vertical );
+        _animator.SetFloat("WalkHorizontal", _horizontal);
+        _animator.SetBool("PlayerMoving", true);
 
-        if (_horizontal > .1f)
+        if(Mathf.Abs(_vertical) ==0 && Mathf.Abs(_horizontal ) == 0)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            _animator.SetBool("PlayerMoving", false);
         }
-        if ( _horizontal <.1f)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
-        }
-        
-        else
-        {
-            _animator.SetBool("Idle", true);
-        }
-        
-        
     }
 }

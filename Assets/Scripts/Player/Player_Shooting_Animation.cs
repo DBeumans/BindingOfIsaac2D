@@ -5,32 +5,32 @@ public class Player_Shooting_Animation : MonoBehaviour {
 
 
     Animator _animator;
+    InputBehaviour _inputBehaviour;
+
+    float _vertical;
+    float _horizontal;
+    bool _playerShooting;
+
+    public bool PlayerShooting { set { _playerShooting = value; } }
 
     void Start()
     {
         _animator = GetComponent<Animator>();
+        _inputBehaviour = GameObject.FindObjectOfType<InputBehaviour>();
     }
 
-    public void PlayAnimation(string direction)
+    void Update()
     {
-        switch(direction)
-        {
-            case "Left":
-                _animator.SetBool("Shoot_Left", true);
-                _animator.SetBool("Shoot_Left", false);
-                break;
-            case "Right":
-                _animator.SetBool("Shoot_Right", true);
-                _animator.SetBool("Shoot_Right", false);
-                break;
-            case "Up":
-                _animator.SetBool("Shoot_Up", true);
-                _animator.SetBool("Shoot_Up", false);
-                break;
-            case "Down":
-                _animator.SetBool("Shoot_Down", true);
-                _animator.SetBool("Shoot_Down", false);
-                break;
-        }
+        _inputBehaviour.KeyCheck();
+        PlayAnimation();
+        _animator.SetBool("PlayerShooting", _playerShooting);
+    }
+    void PlayAnimation()
+    {
+        _horizontal = _inputBehaviour.Horizontal;
+        _vertical = _inputBehaviour.Vertical;
+
+        _animator.SetFloat("ShootVertical", _vertical);
+        _animator.SetFloat("ShootHorizontal", _horizontal);
     }
 }
