@@ -6,10 +6,12 @@ public class Player_InputCheck : InputBehaviour {
     //script reference here
 
     Player_Shooting _player_Shooting;
+    Player_Movement_Animation _player_Movement_Animation;
     string _arrowPressed="";
     void Awake()
     {
         _player_Shooting = GetComponent<Player_Shooting>();
+        _player_Movement_Animation = GetComponent<Player_Movement_Animation>();
     }
 
     // Update is called once per frame
@@ -50,8 +52,4 @@ public class Player_InputCheck : InputBehaviour {
         }
     }
 
-    void Player_DirectionCheck()
-    {
-
-    }
 }
