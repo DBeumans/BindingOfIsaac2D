@@ -55,8 +55,7 @@ public class SpeedBehaviour : MonoBehaviour {
 
     //comment if Rigidbody2D is in unneeded objeckt
     public Vector2 rigidbodyVelocity2D { get { return _rgbVelocity2D;} }
-    public Rigidbody2D rigidbody2D {
-        get { return _rgb2D; } set { _rgb2D = value;} }
+    public Rigidbody2D rigidbody2D { get { return _rgb2D; } set { _rgb2D = value;} }
 
     //uncomment if Rigidbody3D is in needed objeckt
     /*public Vector3 rigidbodyVelocity3D { get { return _rgbVelocity3D;} }

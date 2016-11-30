@@ -8,8 +8,7 @@ public class Player_Movement : MonoBehaviour {
     
     float _movementSpeed = 5f;
     Vector2 _moveInput;
-    Vector2 _velocity;
-
+    
     void Start() {
         _slowMovement = GetComponent<SpeedBehaviour>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
