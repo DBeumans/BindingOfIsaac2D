@@ -23,7 +23,7 @@ public class Enemy_Spawner : Spawner {
         for (int j = 0; j < _spawnPoints.Length; j++)
         {
             _points = _spawnPoints[j];
-            _enemy = _enemies[Random.Range(0, _enemies.Length)];
+            _enemy = _enemies[0];
             if(_points == _spawnPoints[5])
             {
                 _enemy = _enemies[1];
