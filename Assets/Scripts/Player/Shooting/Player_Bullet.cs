@@ -10,8 +10,12 @@ public class Player_Bullet : MonoBehaviour {
     [SerializeField]bool _right;
     [SerializeField]bool _up;
     [SerializeField]bool _down;
-
-    public string Direction;
+    string _direction;
+    public string Direction
+    {
+        get { return _direction;  }
+        set { _direction = value; }
+    }
 
     BulletAnimationBehaviour _bulletAnimationBehaviour;
     Player_InputCheck _player_InputCheck;
@@ -24,16 +28,13 @@ public class Player_Bullet : MonoBehaviour {
     void Update() { if (_bulletAnimationBehaviour.AnimationIsPlaying) { _bulletTravelSpeed = 0f; } }
     void FixedUpdate()
     {
-       
         CheckDirection();
-        Movement();
-
-        
+        Movement();        
     }
 
     void CheckDirection()
     {
-        switch(Direction)
+        switch(_direction)
         {
             case "Left":
                 _left = true;
@@ -63,8 +64,26 @@ public class Player_Bullet : MonoBehaviour {
 
             if (_up)
             { transform.Translate(Vector2.up   * _bulletTravelSpeed * Time.deltaTime); }
+    }
 
+    void Bullet_Physics()
+    {
+        if(_player_InputCheck.MoveInput.x < 0) // left
+        {
 
+        }
+        if(_player_InputCheck.MoveInput.x > 0 ) // right
+        {
+
+        }
+        if(_player_InputCheck.MoveInput.y < 0 ) // down
+        {
+
+        }
+        if(_player_InputCheck.MoveInput.y > 0 ) // up
+        {
+
+        }
     }
 
 }
