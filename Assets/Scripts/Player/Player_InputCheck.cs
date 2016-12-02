@@ -30,7 +30,7 @@ public class Player_InputCheck : InputBehaviour {
         if (ArrowDown)
         {
             if (_arrowPressed != "down") { _arrowPressed = "down";  }
-            else if (_arrowPressed == "down") { _player_Shooting.CreateBullet("Down"); _player_Movement_Animation. }
+            else if (_arrowPressed == "down") { _player_Shooting.CreateBullet("Down");  }
         }
 
         if (ArrowLeft)

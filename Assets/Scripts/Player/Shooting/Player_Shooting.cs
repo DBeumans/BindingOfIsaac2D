@@ -4,7 +4,7 @@ using System.Collections;
 public class Player_Shooting : MonoBehaviour {
 
     Player_Shooting_Audio _player_Shooting_Audio;
-    
+    Player_Movement_Animation _player_Animation;
 
     [SerializeField]GameObject _bulletPrefab;
     [SerializeField]Transform _player_muzzle;
@@ -14,6 +14,7 @@ public class Player_Shooting : MonoBehaviour {
     void Start()
     {
         _player_Shooting_Audio = GetComponent<Player_Shooting_Audio>();
+        _player_Animation = GetComponent<Player_Movement_Animation>();
     }
 
     public void CreateBullet(string pos)
@@ -28,7 +29,23 @@ public class Player_Shooting : MonoBehaviour {
             nextFire = 0;
             
         }
-        
-        
+        /*
+        switch(pos)
+        {
+            case "Left":
+                _player_Animation.ShootLeft = true;
+                //_player_Animation.ShootLeft = false;
+                break;
+            case "Right":
+                _player_Animation.ShootRight = true;
+                break;
+            case "Up":
+                _player_Animation.ShootUp = true;
+                break;
+            case "Down":
+                _player_Animation.ShootDown = true;
+                break;
+        } 
+        */ 
     }
 }

@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: fc69c98f59fd1cd458b36e1c785e10c9
-timeCreated: 1480511405
+guid: e5c1144186b6cfb44b5fc52c0f6b801c
+timeCreated: 1480684394
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Enemy_walk_right_0
-    21300002: Enemy_walk_right_1
-    21300004: Enemy_walk_right_2
-    21300006: Enemy_walk_right_3
-    21300008: Enemy_walk_right_4
-    21300010: Enemy_walk_right_5
-    21300012: Enemy_walk_right_6
-    21300014: Enemy_walk_right_7
-    21300016: Enemy_walk_right_8
-    21300018: Enemy_walk_right_9
+    21300000: Enemy_walk_left_x4_0
+    21300002: Enemy_walk_left_x4_1
+    21300004: Enemy_walk_left_x4_2
+    21300006: Enemy_walk_left_x4_3
+    21300008: Enemy_walk_left_x4_4
+    21300010: Enemy_walk_left_x4_5
+    21300012: Enemy_walk_left_x4_6
+    21300014: Enemy_walk_left_x4_7
+    21300016: Enemy_walk_left_x4_8
+    21300018: Enemy_walk_left_x4_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,130 +63,130 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Enemy_walk_right_0
+      name: Enemy_walk_left_x4_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 5
-        width: 16
-        height: 12
+        x: 36
+        y: 20
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_1
+      name: Enemy_walk_left_x4_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 5
-        width: 15
-        height: 12
+        x: 176
+        y: 20
+        width: 60
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_2
+      name: Enemy_walk_left_x4_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 5
-        width: 16
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Enemy_walk_right_3
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 5
-        width: 17
-        height: 13
+        x: 304
+        y: 20
+        width: 64
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_4
+      name: Enemy_walk_left_x4_3
       rect:
         serializedVersion: 2
-        x: 141
-        y: 5
-        width: 17
-        height: 13
+        x: 436
+        y: 20
+        width: 68
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_5
+      name: Enemy_walk_left_x4_4
       rect:
         serializedVersion: 2
-        x: 175
-        y: 5
-        width: 15
-        height: 13
+        x: 572
+        y: 20
+        width: 68
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_6
+      name: Enemy_walk_left_x4_5
       rect:
         serializedVersion: 2
-        x: 208
-        y: 5
-        width: 15
-        height: 13
+        x: 700
+        y: 20
+        width: 60
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_7
+      name: Enemy_walk_left_x4_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 5
-        width: 18
-        height: 13
+        x: 844
+        y: 20
+        width: 60
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_8
+      name: Enemy_walk_left_x4_7
       rect:
         serializedVersion: 2
-        x: 272
-        y: 5
-        width: 18
-        height: 14
+        x: 964
+        y: 20
+        width: 72
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Enemy_walk_right_9
+      name: Enemy_walk_left_x4_8
       rect:
         serializedVersion: 2
-        x: 308
-        y: 5
-        width: 18
-        height: 13
+        x: 1104
+        y: 20
+        width: 72
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Enemy_walk_left_x4_9
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 20
+        width: 72
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
