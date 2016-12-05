@@ -5,6 +5,7 @@ public class Bullet_Collision : MonoBehaviour {
 
     BulletAnimationBehaviour _bulletAnimationBehaviour;
     Bullet_AudioManager _bullet_AudioManager;
+    Enemy_Health _enemy_Health;
 
     void Start()
     {
