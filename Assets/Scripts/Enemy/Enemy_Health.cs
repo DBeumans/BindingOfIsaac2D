@@ -5,6 +5,9 @@ public class Enemy_Health : MonoBehaviour {
 
     // This script it responsible for maintaining the health of the enemy such as damaging and checking the health;
     int _health;
+    bool _isDead;
+
+    public bool IsDead { get { return _isDead; } }
 
     void Start()
     {
@@ -21,7 +24,7 @@ public class Enemy_Health : MonoBehaviour {
             
             yield return new WaitForSeconds(.5f);
         }
-        Dead();
+        _isDead = true;
     }
 
     public void GetDamage(int damage)

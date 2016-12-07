@@ -8,7 +8,12 @@ public class Enemy_Movement : MonoBehaviour {
 
     float _horizontal;
     float _vertical;
+    bool _isMoving;
 
+    public float HorizontalMovement { get { return _horizontal; } }
+    public float VerticalMovement { get { return _vertical; } }
+    public bool IsMoving { get { return _isMoving; } }
+    
     Animator _animator;
 
     float _directionTime;
@@ -23,13 +28,8 @@ public class Enemy_Movement : MonoBehaviour {
 
     void Movement()
     {
+        _isMoving = true;
         transform.Translate((_moveInput * _movementSpeed)* Time.deltaTime);
-
-        _animator.SetFloat("Vertical", _vertical);
-        _animator.SetFloat("Horizontal", _horizontal);
-
-        _animator.SetBool("IsMoving", true);
-
        
         if(Mathf.Abs( _horizontal) < 0 && Mathf.Abs(_vertical) < 0)
         {
