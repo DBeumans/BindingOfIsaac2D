@@ -1,20 +1,20 @@
 fileFormatVersion: 2
 guid: 26fab67ebee2af74f981bdd78b25225f
-timeCreated: 1480689576
+timeCreated: 1481116048
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Spawn_Rook_0
-    21300002: Spawn_Rook_1
-    21300004: Spawn_Rook_2
-    21300006: Spawn_Rook_4
-    21300008: Spawn_Rook_5
-    21300010: Spawn_Rook_7
-    21300012: Spawn_Rook_9
-    21300014: Spawn_Rook_10
-    21300016: Spawn_Rook_11
-    21300018: Spawn_Rook_12
-    21300020: Spawn_Rook_13
+    21300000: Spawn_Rook2
+    21300002: Spawn_Rook3
+    21300004: Spawn_Rook5
+    21300006: Spawn_Rook6
+    21300008: Spawn_Rook7
+    21300010: Spawn_Rook8
+    21300012: Spawn_Rook9
+    21300014: Spawn_Rook10
+    21300016: Spawn_Rook0
+    21300018: Spawn_Rook1
+    21300020: Spawn_Rook4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,23 +64,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spawn_Rook_0
+      name: Spawn_Rook2
       rect:
         serializedVersion: 2
-        x: 113
+        x: 112
         y: 19
         width: 41
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_1
+      name: Spawn_Rook3
       rect:
         serializedVersion: 2
-        x: 159
+        x: 160
         y: 12
         width: 53
         height: 45
@@ -90,7 +90,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_2
+      name: Spawn_Rook5
       rect:
         serializedVersion: 2
         x: 266
@@ -103,7 +103,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_4
+      name: Spawn_Rook6
       rect:
         serializedVersion: 2
         x: 320
@@ -111,12 +111,12 @@ TextureImporter:
         width: 47
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_5
+      name: Spawn_Rook7
       rect:
         serializedVersion: 2
         x: 375
@@ -129,7 +129,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_7
+      name: Spawn_Rook8
       rect:
         serializedVersion: 2
         x: 428
@@ -142,7 +142,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_9
+      name: Spawn_Rook9
       rect:
         serializedVersion: 2
         x: 479
@@ -150,12 +150,12 @@ TextureImporter:
         width: 45
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_10
+      name: Spawn_Rook10
       rect:
         serializedVersion: 2
         x: 533
@@ -163,12 +163,12 @@ TextureImporter:
         width: 45
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_11
+      name: Spawn_Rook0
       rect:
         serializedVersion: 2
         x: 2
@@ -176,12 +176,12 @@ TextureImporter:
         width: 47
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_12
+      name: Spawn_Rook1
       rect:
         serializedVersion: 2
         x: 61
@@ -189,12 +189,12 @@ TextureImporter:
         width: 34
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Spawn_Rook_13
+      name: Spawn_Rook4
       rect:
         serializedVersion: 2
         x: 212

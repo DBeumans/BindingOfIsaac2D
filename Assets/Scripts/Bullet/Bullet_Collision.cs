@@ -29,6 +29,10 @@ public class Bullet_Collision : MonoBehaviour {
                 _bullet_AudioManager.Audio("Bullet_Hit_Ground");
                 _bulletAnimationBehaviour.Bullet_Destroyed();
             }
+            if(other.gameObject.tag == "Enemy")
+            {
+                _bulletAnimationBehaviour.Bullet_Destroyed();
+            }
                     
         }
     }

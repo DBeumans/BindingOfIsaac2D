@@ -5,7 +5,7 @@ public class Player_Bullet : MonoBehaviour {
 
     [SerializeField]
     float _bulletTravelSpeed = 2;
-    int _bulletDamage = 100;
+    [SerializeField]int _bulletDamage;
 
     public int BulletDamage { get { return _bulletDamage; } }
 

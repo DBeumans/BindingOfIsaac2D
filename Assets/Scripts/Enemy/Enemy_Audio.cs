@@ -5,7 +5,8 @@ public class Enemy_Audio : MonoBehaviour {
 
     AudioPlayer _audioPlayer;
 
-    [SerializeField]AudioClip _enemy_Death_Audio;
+    [SerializeField]AudioClip[] _enemy_Death_Audio;
+
 
     void Start()
     {
@@ -14,7 +15,9 @@ public class Enemy_Audio : MonoBehaviour {
 
     public void PlayAudio()
     {
-        _audioPlayer.PlayAudioSound(_enemy_Death_Audio, false, 1f);
+        int _audioClip = Random.Range(0, _enemy_Death_Audio.Length);
+        Debug.Log(_audioClip);
+        _audioPlayer.PlayAudioSound(_enemy_Death_Audio[_audioClip], false, 1f);
     }
 
 }

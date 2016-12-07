@@ -7,22 +7,39 @@ public class EnemyAnimationBehaviour : MonoBehaviour {
     Enemy_Movement _enemyMovement;
     Enemy_Health _enemyHealth;
 
+    bool _isSpawned;
+    bool _showEnemy;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
         _enemyMovement = GetComponent<Enemy_Movement>();
-        _enemyHealth = GetComponent<Enemy_Health>();
-
+        _enemyHealth = GetComponent<Enemy_Health>();      
     }
 
     void Update()
     {
-        // Movement
-        _animator.SetFloat("Vertical", _enemyMovement.VerticalMovement);
-        _animator.SetFloat("Horizontal", _enemyMovement.HorizontalMovement);
-        _animator.SetBool("IsMoving", _enemyMovement.IsMoving);
+        //_animator.SetBool("IsSpawned", _isSpawned);
+        //_animator.SetBool("ShowEnemy", _showEnemy);
+            // Movement
+            _animator.SetFloat("Vertical", _enemyMovement.VerticalMovement);
+            _animator.SetFloat("Horizontal", _enemyMovement.HorizontalMovement);
+            _animator.SetBool("IsMoving", _enemyMovement.IsMoving);
 
-        // Death
-        _animator.SetBool("IsDead", _enemyHealth.IsDead);
+            // Death
+            _animator.SetBool("IsDead", _enemyHealth.IsDead);
+ 
+
     }
+    /*
+    void ShowEnemy()
+    {
+        // _isSpawned = false;
+        _showEnemy = true;
+    }
+    void IsSpawned()
+    {
+        _isSpawned = true;
+    }
+    */
 }
