@@ -4,7 +4,6 @@ using System.Collections;
 public class Player_Shooting : MonoBehaviour {
 
     Player_Shooting_Audio _player_Shooting_Audio;
-    Player_Movement_Animation _player_Animation;
 
     [SerializeField]GameObject _bulletPrefab;
     [SerializeField]Transform _player_muzzle;
@@ -14,11 +13,14 @@ public class Player_Shooting : MonoBehaviour {
     void Start()
     {
         _player_Shooting_Audio = GetComponent<Player_Shooting_Audio>();
-        _player_Animation = GetComponent<Player_Movement_Animation>();
     }
 
     public void CreateBullet(string pos)
     {
+        /*
+        REMINDER
+        Change the condition to when the shoot animation is done playing with animation event.
+        */
         nextFire += Time.deltaTime;
         if(nextFire >= fireRate)
         {

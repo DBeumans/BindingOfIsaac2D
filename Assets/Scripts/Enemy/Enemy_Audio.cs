@@ -16,7 +16,6 @@ public class Enemy_Audio : MonoBehaviour {
     public void PlayAudio()
     {
         int _audioClip = Random.Range(0, _enemy_Death_Audio.Length);
-        Debug.Log(_audioClip);
         _audioPlayer.PlayAudioSound(_enemy_Death_Audio[_audioClip], false, 1f);
     }
 
