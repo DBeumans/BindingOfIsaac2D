@@ -5,6 +5,9 @@ public class Player_Bullet : MonoBehaviour {
 
     [SerializeField]
     float _bulletTravelSpeed = 2;
+    [SerializeField]int _bulletDamage;
+
+    public int BulletDamage { get { return _bulletDamage; } }
 
     [SerializeField]bool _left;
     [SerializeField]bool _right;
@@ -64,26 +67,6 @@ public class Player_Bullet : MonoBehaviour {
 
             if (_up)
             { transform.Translate(Vector2.up   * _bulletTravelSpeed * Time.deltaTime); }
-    }
-
-    void Bullet_Physics()
-    {
-        if(_player_InputCheck.MoveInput.x < 0) // left
-        {
-
-        }
-        if(_player_InputCheck.MoveInput.x > 0 ) // right
-        {
-
-        }
-        if(_player_InputCheck.MoveInput.y < 0 ) // down
-        {
-
-        }
-        if(_player_InputCheck.MoveInput.y > 0 ) // up
-        {
-
-        }
     }
 
 }

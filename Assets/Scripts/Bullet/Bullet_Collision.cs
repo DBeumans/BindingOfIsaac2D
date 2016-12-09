@@ -5,6 +5,7 @@ public class Bullet_Collision : MonoBehaviour {
 
     BulletAnimationBehaviour _bulletAnimationBehaviour;
     Bullet_AudioManager _bullet_AudioManager;
+    Enemy_Health _enemy_Health;
 
     void Start()
     {
@@ -26,6 +27,10 @@ public class Bullet_Collision : MonoBehaviour {
             {
 
                 _bullet_AudioManager.Audio("Bullet_Hit_Ground");
+                _bulletAnimationBehaviour.Bullet_Destroyed();
+            }
+            if(other.gameObject.tag == "Enemy")
+            {
                 _bulletAnimationBehaviour.Bullet_Destroyed();
             }
                     

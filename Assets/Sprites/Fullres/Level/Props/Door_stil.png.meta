@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Fullres/Level/Props/Door_stil.png.meta
 guid: 8ab917716102a994798acefdcb6bf3fa
 timeCreated: 1480936204
+=======
+<<<<<<< HEAD
+guid: f86d7751ce47bf94baa3172af9e373f7
+timeCreated: 1480933616
+=======
+guid: 8d58cfa47600d6f4889369a921985c89
+timeCreated: 1480931676
+>>>>>>> 180d9d9c5ca7f52041a60846a7c1773dd4b3cb17
+>>>>>>> d1e60c8c45c969ce766d35507d345b80961f237b:Assets/Sprites/Fullres/Player/Attack/backcry.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

@@ -8,39 +8,77 @@ public class Enemy_Movement : MonoBehaviour {
 
     float _horizontal;
     float _vertical;
+    bool _isMoving;
 
+    public float HorizontalMovement { get { return _horizontal; } }
+    public float VerticalMovement { get { return _vertical; } }
+    public bool IsMoving { get { return _isMoving; } }
+
+    Enemy_Health _enemy_Health;
     Animator _animator;
 
     float _directionTime;
     
     void Start()
     {
+        MoveEnemy();
         _animator = GetComponent<Animator>();
+        _enemy_Health = GetComponent<Enemy_Health>();
         StartCoroutine(RandomVector2());
+        
+    }
+
+    void MoveEnemy()
+    {
+        _isMoving = true;
     }
 
     void FixedUpdate() { Movement(); }
 
     void Movement()
     {
-        transform.Translate((_moveInput * _movementSpeed)* Time.deltaTime);
-
-        _animator.SetFloat("Vertical", _vertical);
-        _animator.SetFloat("Horizontal", _horizontal);
-
-        _animator.SetBool("IsMoving", true);
-
-       
-        if(Mathf.Abs( _horizontal) < 0 && Mathf.Abs(_vertical) < 0)
+        if(!_enemy_Health.IsDead)
         {
-            transform.localScale = new Vector2(-2, 2);
+            if (_isMoving)
+            {
+                transform.Translate((_moveInput * _movementSpeed) * Time.deltaTime);
+
+                if (Mathf.Abs(_horizontal) < 0 && Mathf.Abs(_vertical) < 0)
+                {
+                    transform.localScale = new Vector2(-2, 2);
+                }
+            }
+        }
+        if(_enemy_Health.IsDead)
+        {
+            _moveInput.x = 0;
+            _moveInput.y = 0;
         }
 
     }
 
+    public void AddForce(string direction)
+    {
+        switch(direction)
+        {
+            case "Left":
+                Debug.Log("left");
+                break;
+            case "Right":
+                Debug.Log("right");
+                break;
+            case "Up":
+                Debug.Log("up");
+                break;
+            case "Down":
+                Debug.Log("down");
+                break;
+        }
+    }
+
     IEnumerator RandomVector2()
     {
-        while(true)
+        while(!_enemy_Health.IsDead)
         {
             float x = Random.Range(-1f, 1f);
             float y = Random.Range(-1f, 1f);

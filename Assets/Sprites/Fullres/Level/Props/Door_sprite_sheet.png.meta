@@ -1,6 +1,16 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Fullres/Level/Props/Door_sprite_sheet.png.meta
 guid: a174b147fae253d419d0254da011a337
 timeCreated: 1480936205
+=======
+<<<<<<< HEAD
+guid: e38bd2c3698452e438fd3455f88c82fa
+timeCreated: 1480933615
+=======
+guid: 4aabe5ae1fc8c6940a9253c50e57d487
+timeCreated: 1480931675
+>>>>>>> 180d9d9c5ca7f52041a60846a7c1773dd4b3cb17
+>>>>>>> d1e60c8c45c969ce766d35507d345b80961f237b:Assets/Sprites/Fullres/Player/Attack/leftcry.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}

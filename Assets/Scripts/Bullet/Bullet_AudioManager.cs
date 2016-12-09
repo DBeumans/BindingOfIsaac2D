@@ -10,7 +10,7 @@ public class Bullet_AudioManager : MonoBehaviour {
     AudioPlayer _audioPlayer;
 
     [SerializeField]AudioClip[] _audioClips;
-    [SerializeField]AudioClip _audioClip;
+    AudioClip _audioClip;
 
     void Awake()
     {
@@ -23,11 +23,11 @@ public class Bullet_AudioManager : MonoBehaviour {
         {
             case "Bullet_Hit_Ground":
                 _audioClip = _audioClips[0];
-                _audioPlayer.PlayAudioSound(_audioClip);
+                _audioPlayer.PlayAudioSound(_audioClip,false,1f);
                 break;
             case "Bullet_Hit_Wall":
                 _audioClip = _audioClips[1];
-                _audioPlayer.PlayAudioSound(_audioClip);
+                _audioPlayer.PlayAudioSound(_audioClip,false,1f);
                 break;
         }
     }
