@@ -31,7 +31,6 @@ public class Player_Health : MonoBehaviour {
     public void GetDamage(int damage)
     {
         _currentHealth -= damage;
-        Debug.Log(_currentHealth);
     }
 
     void Dead()
