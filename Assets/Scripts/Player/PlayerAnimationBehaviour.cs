@@ -22,7 +22,7 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
     {
         _animator = GetComponent<Animator>();
         _inputBehaviour = GameObject.FindObjectOfType<InputBehaviour>();
-        _player_Health = GetComponent<Player_Health>();
+        _player_Health = GetComponentInParent<Player_Health>();
     }
 
     void Update()
@@ -37,20 +37,32 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
         _vertical = _inputBehaviour.Vertical;
         _isDead = _player_Health.IsDead;
 
-        _animator.SetFloat("WalkVertical", _vertical);
-        _animator.SetFloat("WalkHorizontal", _horizontal);
-        _animator.SetBool("PlayerMoving", true);
+        _animator.SetFloat("Vertical", _vertical);
+        _animator.SetFloat("Horizontal", _horizontal);
 
-        _animator.SetBool("Player_Shoot_Left", _left);
-        _animator.SetBool("Player_Shoot_Right", _right);
-        _animator.SetBool("Player_Shoot_Up", _up);
-        _animator.SetBool("Player_Shoot_Down", _down);
+        _animator.SetBool("IsMoving", true);
 
         _animator.SetBool("IsDead", _isDead);
 
         if (Mathf.Abs(_vertical) == 0 && Mathf.Abs(_horizontal) == 0)
         {
-            _animator.SetBool("PlayerMoving", false);
+            _animator.SetBool("IsMoving", false);
         }
+
+
+        if (_horizontal < 0) // left
+            _animator.SetBool("Head_Left", true);
+        if (_horizontal > 0) //right
+            _animator.SetBool("Head_Right", true);
+        if (_vertical < 0) // down
+            _animator.SetBool("Head_Up", true);
+        if (_vertical > 0)
+            _animator.SetBool("Head_Down", true);
+
+        else
+        {
+            _animator.SetBool("Head_Left", false); _animator.SetBool("Head_Up", false);_animator.SetBool("Head_Down", false);_animator.SetBool("Head_Right", false);
+        }
+
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Enemy_FX : MonoBehaviour {
-
+	// naam geving.
     [SerializeField]
     GameObject[] _blood_Paddle;
 

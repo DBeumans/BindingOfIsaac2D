@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: cfd328cd216d41a43a7241ff56ff4284
-timeCreated: 1480933615
-=======
-guid: b7f73567b003a0745858f3a28c0ad0c5
-timeCreated: 1480931677
->>>>>>> 180d9d9c5ca7f52041a60846a7c1773dd4b3cb17
+timeCreated: 1481287663
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: rightnormal_0
+    21300002: rightnormal_1
+    21300004: rightnormal_2
+    21300006: rightnormal_3
+    21300008: rightnormal_4
+    21300010: rightnormal_5
+    21300012: rightnormal_6
+    21300014: rightnormal_7
+    21300016: rightnormal_8
+    21300018: rightnormal_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +48,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -56,7 +61,137 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: rightnormal_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_1
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 60
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 2
+        width: 64
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_6
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_8
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 2
+        width: 72
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: rightnormal_9
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

@@ -6,7 +6,7 @@ public class Player_Movement : MonoBehaviour {
     Rigidbody2D _rigidbody2D;
     InputBehaviour _keyInput;
     
-    float _movementSpeed = 5f;
+    [SerializeField]float _movementSpeed = 5f;
     Vector2 _moveInput;
     
     void Start() {

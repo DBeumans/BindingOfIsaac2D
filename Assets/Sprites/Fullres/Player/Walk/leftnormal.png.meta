@@ -1,14 +1,19 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: fe7f3ff62eeff8d4595c49b6eb8aa871
-timeCreated: 1480933616
-=======
-guid: 1c0706b494c5caf44ad725aa50b78030
-timeCreated: 1480931674
->>>>>>> 180d9d9c5ca7f52041a60846a7c1773dd4b3cb17
+timeCreated: 1481287646
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: leftnormal_0
+    21300002: leftnormal_1
+    21300004: leftnormal_2
+    21300006: leftnormal_3
+    21300008: leftnormal_4
+    21300010: leftnormal_5
+    21300012: leftnormal_6
+    21300014: leftnormal_7
+    21300016: leftnormal_8
+    21300018: leftnormal_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -43,7 +48,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -56,7 +61,137 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: leftnormal_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 9
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 9
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_2
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 5
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 5
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_4
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 5
+        width: 68
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_5
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 5
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_6
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 5
+        width: 60
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_7
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 5
+        width: 72
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_8
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 5
+        width: 72
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: leftnormal_9
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 5
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

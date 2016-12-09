@@ -2,14 +2,17 @@
 using System.Collections;
 
 public class FX_Timer : MonoBehaviour {
+	// change name example opacity fader.
     [SerializeField] int _timer = 1;
-    [SerializeField] int _duration = 10;
+    [SerializeField] int _duration = 30;
+	float _opacityStep;
     float _opacity = 1f;
     SpriteRenderer _spriteRenderer;
 
     void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+		_opacityStep = 1 / _duration;
         StartCoroutine(Opacity());
     }
 
