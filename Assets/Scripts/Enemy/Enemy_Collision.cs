@@ -14,14 +14,13 @@ public class Enemy_Collision : MonoBehaviour {
         _enemy_Movement = gameObject.GetComponentInParent<Enemy_Movement>();
     }
     
-    void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Bullet")
         {
 
             if(this.gameObject.name == "Left")
             {
-                Debug.Log("ass");
                 //if bullet touched left side of the enemy, apply force to it.
                 _enemy_Movement.AddForce("Left");
                 _enemy_Health.GetDamage(_player_Bullet.BulletDamage);

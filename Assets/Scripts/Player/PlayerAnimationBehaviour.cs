@@ -10,14 +10,6 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
     float _vertical;
     float _horizontal;
     bool _isDead;
-
-    bool _left, _right, _up, _down;
-
-    public bool ShootLeft { set { _left = value; } }
-    public bool ShootRight { set { _right = value; } }
-    public bool ShootUp { set { _up = value; } }
-    public bool ShootDown { set { _down = value; } }
-
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -42,27 +34,33 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
 
         _animator.SetBool("IsMoving", true);
 
-        _animator.SetBool("IsDead", _isDead);
+        
+        if(_isDead)
+        {
+            _animator.SetLayerWeight(1, 0f);
+            _animator.SetLayerWeight(2, 0f);
+            _animator.SetBool("IsDead", _isDead);
+
+        }
 
         if (Mathf.Abs(_vertical) == 0 && Mathf.Abs(_horizontal) == 0)
         {
             _animator.SetBool("IsMoving", false);
         }
 
+        if (_inputBehaviour.ArrowLeft) // left
+            _animator.SetTrigger("Shoot_Left");
+        if (_inputBehaviour.ArrowRight) //right
+            _animator.SetTrigger("Shoot_Right");
+        if (_inputBehaviour.ArrowDown) // down
+            _animator.SetTrigger("Shoot_Down");
+        if (_inputBehaviour.ArrowUp) //up
+            _animator.SetTrigger("Shoot_Up");
 
-        if (_horizontal < 0) // left
-            _animator.SetBool("Head_Left", true);
-        if (_horizontal > 0) //right
-            _animator.SetBool("Head_Right", true);
-        if (_vertical < 0) // down
-            _animator.SetBool("Head_Up", true);
-        if (_vertical > 0)
-            _animator.SetBool("Head_Down", true);
 
-        else
-        {
-            _animator.SetBool("Head_Left", false); _animator.SetBool("Head_Up", false);_animator.SetBool("Head_Down", false);_animator.SetBool("Head_Right", false);
-        }
-
+        /*
+        if (_inputBehaviour.ArrowDown == false && _inputBehaviour.ArrowLeft == false && _inputBehaviour.ArrowRight == false && _inputBehaviour.ArrowUp == false)
+            _animator.SetTrigger("NotShooting");
+    */
     }
 }

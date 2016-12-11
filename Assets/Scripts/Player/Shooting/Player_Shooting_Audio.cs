@@ -14,6 +14,6 @@ public class Player_Shooting_Audio : MonoBehaviour {
 
     public void Audio()
     {
-        _audioPlayer.PlayAudioSound(_audioClip,false,1f);
+        _audioPlayer.PlayAudioOneShot(_audioClip,1f);
     }
 }

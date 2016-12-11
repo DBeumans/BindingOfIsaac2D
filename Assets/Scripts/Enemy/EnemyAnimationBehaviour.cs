@@ -28,18 +28,15 @@ public class EnemyAnimationBehaviour : MonoBehaviour {
 
             // Death
             _animator.SetBool("IsDead", _enemyHealth.IsDead);
- 
-
+        if (_enemyHealth.GetDamageFromBullet)
+        {
+            _animator.SetTrigger("GetDamage");
+            _enemyHealth.GetDamageFromBullet = false;
+        }
     }
-    /*
+
     void ShowEnemy()
     {
-        // _isSpawned = false;
-        _showEnemy = true;
+        _animator.SetTrigger("Show");
     }
-    void IsSpawned()
-    {
-        _isSpawned = true;
-    }
-    */
 }

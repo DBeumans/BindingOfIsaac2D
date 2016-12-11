@@ -23,6 +23,7 @@ public class Player_Health : MonoBehaviour {
         {
             // alive
             _isDead = false;
+            Debug.Log("Health" + _currentHealth);
             yield return new WaitForSeconds(.5f);
         }
         _isDead = true;

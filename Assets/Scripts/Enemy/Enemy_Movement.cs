@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Enemy_Movement : MonoBehaviour {
 
-    float _movementSpeed = .5f;
+    [SerializeField]float _movementSpeed = .5f;
     [SerializeField]Vector2 _moveInput;
 
     float _horizontal;
@@ -15,14 +15,12 @@ public class Enemy_Movement : MonoBehaviour {
     public bool IsMoving { get { return _isMoving; } }
 
     Enemy_Health _enemy_Health;
-    Animator _animator;
 
     float _directionTime;
     
     void Start()
     {
-        MoveEnemy();
-        _animator = GetComponent<Animator>();
+        //MoveEnemy();
         _enemy_Health = GetComponent<Enemy_Health>();
         StartCoroutine(RandomVector2());
         

@@ -69,9 +69,9 @@ public class InputBehaviour : MonoBehaviour {
         keyS = Input.GetKeyDown(_keyS);
         keyD = Input.GetKeyDown(_keyD);
 
-        arrowDown = Input.GetKey(_arrowDown);
-        arrowLeft = Input.GetKey(_arrowLeft);
-        arrowRight = Input.GetKey(_arrowRight);
-        arrowUp = Input.GetKey(_arrowUp);
+        arrowDown = Input.GetKeyDown(_arrowDown);
+        arrowLeft = Input.GetKeyDown(_arrowLeft);
+        arrowRight = Input.GetKeyDown(_arrowRight);
+        arrowUp = Input.GetKeyDown(_arrowUp);
     }
 }

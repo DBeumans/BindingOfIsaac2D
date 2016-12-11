@@ -21,12 +21,10 @@ public class Player_Bullet : MonoBehaviour {
     }
 
     BulletAnimationBehaviour _bulletAnimationBehaviour;
-    Player_InputCheck _player_InputCheck;
 
     void Start()
     {
         _bulletAnimationBehaviour = GetComponent<BulletAnimationBehaviour>();
-        _player_InputCheck = GameObject.FindObjectOfType<Player_InputCheck>();
     }
     void Update() { if (_bulletAnimationBehaviour.AnimationIsPlaying) { _bulletTravelSpeed = 0f; } }
     void FixedUpdate()

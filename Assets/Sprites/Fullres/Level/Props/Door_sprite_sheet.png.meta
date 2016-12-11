@@ -1,19 +1,21 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Sprites/Fullres/Level/Props/Door_sprite_sheet.png.meta
-guid: a174b147fae253d419d0254da011a337
-timeCreated: 1480936205
-=======
-<<<<<<< HEAD
-guid: e38bd2c3698452e438fd3455f88c82fa
-timeCreated: 1480933615
-=======
-guid: 4aabe5ae1fc8c6940a9253c50e57d487
-timeCreated: 1480931675
->>>>>>> 180d9d9c5ca7f52041a60846a7c1773dd4b3cb17
->>>>>>> d1e60c8c45c969ce766d35507d345b80961f237b:Assets/Sprites/Fullres/Player/Attack/leftcry.png.meta
+guid: 420df1a3a749f3f48bb0ab34a77781b5
+timeCreated: 1481490135
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Door_sprite_sheet_0
+    21300002: Door_sprite_sheet_1
+    21300004: Door_sprite_sheet_2
+    21300006: Door_sprite_sheet_3
+    21300008: Door_sprite_sheet_4
+    21300010: Door_sprite_sheet_5
+    21300012: Door_sprite_sheet_6
+    21300014: Door_sprite_sheet_7
+    21300016: Door_sprite_sheet_8
+    21300018: Door_sprite_sheet_9
+    21300020: Door_sprite_sheet_10
+    21300022: Door_sprite_sheet_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -40,7 +42,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -48,7 +50,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -61,7 +63,163 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Door_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 252
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 252
+        width: 188
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 252
+        width: 184
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 252
+        width: 164
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 252
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 252
+        width: 188
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 60
+        width: 192
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 60
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 60
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 60
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 60
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Door_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 60
+        width: 196
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

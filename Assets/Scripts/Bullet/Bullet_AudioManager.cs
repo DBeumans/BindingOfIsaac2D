@@ -23,11 +23,11 @@ public class Bullet_AudioManager : MonoBehaviour {
         {
             case "Bullet_Hit_Ground":
                 _audioClip = _audioClips[0];
-                _audioPlayer.PlayAudioSound(_audioClip,false,1f);
+                _audioPlayer.PlayAudioOneShot(_audioClip,1f);
                 break;
             case "Bullet_Hit_Wall":
                 _audioClip = _audioClips[1];
-                _audioPlayer.PlayAudioSound(_audioClip,false,1f);
+                _audioPlayer.PlayAudioOneShot(_audioClip,1f);
                 break;
         }
     }
