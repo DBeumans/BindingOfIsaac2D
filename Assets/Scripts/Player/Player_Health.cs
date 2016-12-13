@@ -5,12 +5,14 @@ public class Player_Health : MonoBehaviour {
 
     float _maxHealth;
     float _currentHealth;
-
+    bool _getDamage;
     bool _isDead;
     public bool IsDead { get { return _isDead; } }
-    void Start()
+    public float CurrentHealth { get { return _currentHealth; } }
+    public bool RecieveDamage { get { return _getDamage; } }
+    void Awake()
     {
-        _maxHealth = 100f;
+        _maxHealth =3f;
         _currentHealth = _maxHealth;
 
         StartCoroutine(CheckHealth());
@@ -23,14 +25,19 @@ public class Player_Health : MonoBehaviour {
         {
             // alive
             _isDead = false;
-            Debug.Log("Health" + _currentHealth);
             yield return new WaitForSeconds(.5f);
         }
         _isDead = true;
     }
 
-    public void GetDamage(int damage)
+    void DamageRecieved()
     {
+        _getDamage = false;
+    }
+
+    public void GetDamage(float damage)
+    {
+        _getDamage = true;
         _currentHealth -= damage;
     }
 
@@ -38,6 +45,7 @@ public class Player_Health : MonoBehaviour {
     {
         // enemy is dead
         //do logic.
+        Time.timeScale = 0;
         Destroy(this.gameObject);
     }
 

@@ -10,6 +10,7 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
     float _vertical;
     float _horizontal;
     bool _isDead;
+    bool _getDamage;
     void Start()
     {
         _animator = GetComponent<Animator>();
@@ -28,14 +29,15 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
         _horizontal = _inputBehaviour.Horizontal;
         _vertical = _inputBehaviour.Vertical;
         _isDead = _player_Health.IsDead;
+        _getDamage = _player_Health.RecieveDamage;
 
         _animator.SetFloat("Vertical", _vertical);
         _animator.SetFloat("Horizontal", _horizontal);
 
         _animator.SetBool("IsMoving", true);
+        _animator.SetBool("GetDamage", _getDamage);
 
-        
-        if(_isDead)
+        if (_isDead)
         {
             _animator.SetLayerWeight(1, 0f);
             _animator.SetLayerWeight(2, 0f);
