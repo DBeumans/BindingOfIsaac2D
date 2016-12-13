@@ -21,13 +21,13 @@ public class Player_InputCheck : InputBehaviour {
             return;
 
         KeyCheck();
-        ArrowsCheck();
+   //     ArrowsCheck();
         if (base.Escape)
         {
             Debug.Log("pauze");
         }
     }
-    void ArrowsCheck()
+ /*   void ArrowsCheck()
     {
 
         if (ArrowDown)
@@ -62,5 +62,5 @@ public class Player_InputCheck : InputBehaviour {
             }
         }
     }
-
+*/
 }

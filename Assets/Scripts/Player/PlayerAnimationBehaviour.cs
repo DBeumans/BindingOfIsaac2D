@@ -50,19 +50,31 @@ public class PlayerAnimationBehaviour : MonoBehaviour {
             _animator.SetBool("IsMoving", false);
         }
 
-        if (_inputBehaviour.ArrowLeft) // left
+        if (_inputBehaviour.ArrowLeft && !_animator.GetCurrentAnimatorStateInfo(2).IsName("Left"))
+        { // left
             _animator.SetTrigger("Shoot_Left");
-        if (_inputBehaviour.ArrowRight) //right
+            _animator.SetBool("Not_Shooting", false);
+        }
+        if (_inputBehaviour.ArrowRight && !_animator.GetCurrentAnimatorStateInfo(2).IsName("Right")) //right
+        {
             _animator.SetTrigger("Shoot_Right");
-        if (_inputBehaviour.ArrowDown) // down
+            _animator.SetBool("Not_Shooting", false);
+        }
+            
+        if (_inputBehaviour.ArrowDown && !_animator.GetCurrentAnimatorStateInfo(2).IsName("Down")) // down
+        {
             _animator.SetTrigger("Shoot_Down");
-        if (_inputBehaviour.ArrowUp) //up
+            _animator.SetBool("Not_Shooting", false);
+        }
+            
+        if (_inputBehaviour.ArrowUp && !_animator.GetCurrentAnimatorStateInfo(2).IsName("Up")) //up
+        {
             _animator.SetTrigger("Shoot_Up");
-
-
-        /*
+            _animator.SetBool("Not_Shooting", false);
+        }
+                   
         if (_inputBehaviour.ArrowDown == false && _inputBehaviour.ArrowLeft == false && _inputBehaviour.ArrowRight == false && _inputBehaviour.ArrowUp == false)
-            _animator.SetTrigger("NotShooting");
-    */
+            _animator.SetBool("Not_Shooting", true);
+    
     }
 }
