@@ -60,16 +60,16 @@ public class Enemy_Movement : MonoBehaviour {
         switch(direction)
         {
             case "Left":
-                Debug.Log("left");
+                //Debug.Log("left");
                 break;
             case "Right":
-                Debug.Log("right");
+                //Debug.Log("right");
                 break;
             case "Up":
-                Debug.Log("up");
+                //Debug.Log("up");
                 break;
             case "Down":
-                Debug.Log("down");
+                //Debug.Log("down");
                 break;
         }
     }
