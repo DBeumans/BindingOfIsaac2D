@@ -6,8 +6,6 @@ public class Bullet_Check : MonoBehaviour {
     BulletAnimationBehaviour _bulletAnimationBehaviour;
     Bullet_Destroy _bullet_Destroy;
 
-
-
     void Start()
     {
         _bullet_Destroy = GetComponent<Bullet_Destroy>();

@@ -6,6 +6,7 @@ public class InputBehaviour : MonoBehaviour {
     // Keyboard
     private bool keySpace = false;
     private bool keyEscape = false;
+    private bool keyEnter = false;
     private bool keyW = false;
     private bool keyA = false;
     private bool keyS = false;
@@ -26,6 +27,7 @@ public class InputBehaviour : MonoBehaviour {
     public float Vertical { get { return vertical; } }
     public bool Escape { get { return keyEscape; } }
     public bool Space { get { return keySpace; } }
+    public bool Enter { get { return keyEnter; } }
 
     public Vector2 MoveInput { get { return moveInput; } }
 
@@ -42,6 +44,7 @@ public class InputBehaviour : MonoBehaviour {
     // Keyboard
     KeyCode _keySpace = KeyCode.Space;
     KeyCode _keyEscape = KeyCode.Escape;
+    KeyCode _keyEnter = KeyCode.Return;
 
     KeyCode _keyW = KeyCode.W;
     KeyCode _keyA = KeyCode.A;
@@ -58,6 +61,7 @@ public class InputBehaviour : MonoBehaviour {
         // Keyboard
         keySpace = Input.GetKey(_keySpace);
         keyEscape = Input.GetKeyDown(_keyEscape);
+        keyEnter = Input.GetKeyDown(_keyEnter);
 
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 

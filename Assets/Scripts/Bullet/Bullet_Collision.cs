@@ -29,11 +29,23 @@ public class Bullet_Collision : MonoBehaviour {
                 _bullet_AudioManager.Audio("Bullet_Hit_Ground");
                 _bulletAnimationBehaviour.Bullet_Destroyed();
             }
-            if(other.gameObject.tag == "Enemy")
+
+            if (this.gameObject.tag == "Enemy_Bullet")
             {
-                _bulletAnimationBehaviour.Bullet_Destroyed();
+                if (other.gameObject.CompareTag("Player"))
+                {
+                    _bulletAnimationBehaviour.Bullet_Destroyed();
+                }
             }
-                    
+
+            if(this.gameObject.tag == "Bullet")
+            {
+                if(other.gameObject.CompareTag("Enemy"))
+                {
+                    _bulletAnimationBehaviour.Bullet_Destroyed();
+                }
+            }
+
         }
     }
 }

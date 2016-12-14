@@ -32,4 +32,12 @@ public class Player_Collision : MonoBehaviour {
             }
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Enemy_Bullet")
+        {
+            _player_Health.GetDamage(.25f);
+            _player_damage_Audio.Play_Hit_Damage();
+        }
+    }
 }

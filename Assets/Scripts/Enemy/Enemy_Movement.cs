@@ -13,6 +13,7 @@ public class Enemy_Movement : MonoBehaviour {
     public float HorizontalMovement { get { return _horizontal; } }
     public float VerticalMovement { get { return _vertical; } }
     public bool IsMoving { get { return _isMoving; } }
+    public Vector2 GetMoveInput { get { return _moveInput; } }
 
     Enemy_Health _enemy_Health;
 
@@ -20,7 +21,6 @@ public class Enemy_Movement : MonoBehaviour {
     
     void Start()
     {
-        //MoveEnemy();
         _enemy_Health = GetComponent<Enemy_Health>();
         StartCoroutine(RandomVector2());
         
@@ -52,7 +52,6 @@ public class Enemy_Movement : MonoBehaviour {
             _moveInput.x = 0;
             _moveInput.y = 0;
         }
-
     }
 
     public void AddForce(string direction)

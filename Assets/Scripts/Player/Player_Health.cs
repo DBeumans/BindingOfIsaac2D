@@ -17,11 +17,9 @@ public class Player_Health : MonoBehaviour {
 
         StartCoroutine(CheckHealth());
     }
-
-
     IEnumerator CheckHealth()
     {
-        while (_currentHealth > 0)
+        while (_currentHealth > .26)
         {
             // alive
             _isDead = false;
