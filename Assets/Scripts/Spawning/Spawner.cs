@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Spawner : MonoBehaviour {
 
@@ -8,6 +9,10 @@ public class Spawner : MonoBehaviour {
 
     GameObject _object;
     Transform _spawnPoint;
+
+    [SerializeField]List<GameObject> _objects_list = new List<GameObject>();
+
+    public List<GameObject> Objects_List { get { return _objects_list; } }
 
     void Start()
     {
@@ -25,6 +30,7 @@ public class Spawner : MonoBehaviour {
                 _object = _objects[1];
             }
             Instantiate(_object, _spawnPoint.position, _spawnPoint.rotation);
+            _objects_list.Add(_object);
         }
     }
 

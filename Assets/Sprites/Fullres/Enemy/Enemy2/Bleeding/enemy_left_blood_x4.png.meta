@@ -1,19 +1,18 @@
 fileFormatVersion: 2
-guid: a817ce8614f5f1d4a85548a110648bd5
-timeCreated: 1481724373
+guid: 4cdd76f9f41ad50438e95635697af5b1
+timeCreated: 1481750958
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemy_walk_left_blood_1
-    21300002: enemy_walk_left_blood_3
-    21300004: enemy_walk_left_blood_5
-    21300006: enemy_walk_left_blood_9
-    21300008: enemy_walk_left_blood_10
-    21300010: enemy_walk_left_blood_2
-    21300012: enemy_walk_left_blood_4
-    21300014: enemy_walk_left_blood_6
-    21300016: enemy_walk_left_blood_7
-    21300018: enemy_walk_left_blood_8
+    21300000: enemy_left_blood_1
+    21300002: enemy_left_blood_2
+    21300004: enemy_left_blood_3
+    21300006: enemy_left_blood_4
+    21300008: enemy_left_blood_5
+    21300010: enemy_left_blood_7
+    21300012: enemy_left_blood_8
+    21300014: enemy_left_blood_6
+    21300016: enemy_left_blood_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,130 +62,117 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_walk_left_blood_1
+      name: enemy_left_blood_1
       rect:
         serializedVersion: 2
-        x: 39
-        y: 63
-        width: 104
-        height: 64
+        x: 67
+        y: 103
+        width: 24
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_3
+      name: enemy_left_blood_2
       rect:
         serializedVersion: 2
-        x: 325
-        y: 63
-        width: 104
-        height: 64
+        x: 222
+        y: 111
+        width: 24
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_5
+      name: enemy_left_blood_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 91
+        width: 84
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_left_blood_4
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 71
+        width: 100
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_left_blood_5
       rect:
         serializedVersion: 2
         x: 596
         y: 64
-        width: 104
-        height: 64
+        width: 96
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_9
+      name: enemy_left_blood_7
       rect:
         serializedVersion: 2
-        x: 1167
-        y: 63
-        width: 104
-        height: 64
+        x: 959
+        y: 91
+        width: 12
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_10
+      name: enemy_left_blood_8
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 63
-        width: 94
-        height: 64
+        x: 1108
+        y: 71
+        width: 8
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_2
-      rect:
-        serializedVersion: 2
-        x: 182
-        y: 63
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_left_blood_4
-      rect:
-        serializedVersion: 2
-        x: 445
-        y: 63
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_left_blood_6
+      name: enemy_left_blood_6
       rect:
         serializedVersion: 2
         x: 744
-        y: 63
-        width: 104
-        height: 64
+        y: 65
+        width: 64
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_left_blood_7
+      name: enemy_left_blood_9
       rect:
         serializedVersion: 2
-        x: 895
+        x: 1255
         y: 63
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_left_blood_8
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 63
-        width: 104
-        height: 64
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

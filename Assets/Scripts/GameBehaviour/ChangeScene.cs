@@ -22,5 +22,6 @@ public class ChangeScene : MonoBehaviour {
     public void Change_Scene(int index)
     {
         SceneManager.LoadScene(index);
+        Time.timeScale = 1; 
     }
 }

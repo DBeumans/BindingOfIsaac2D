@@ -11,10 +11,14 @@ public class Enemy_Health : MonoBehaviour {
     public bool GetDamageFromBullet { get { return _getDamageFromBullet; }
         set { _getDamageFromBullet = value; } }
 
+    EnemyTracker _enemyTracker;
+
     void Start()
     {
         _health = 100;
         StartCoroutine(CheckHealth());
+
+        _enemyTracker = GameObject.FindObjectOfType<EnemyTracker>();
         
     }
 
@@ -39,6 +43,7 @@ public class Enemy_Health : MonoBehaviour {
     {
         // enemy is dead
         //do logic.
+        _enemyTracker.RemoveFromList();
         Destroy(this.gameObject);
     }
 

@@ -1,22 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class EnemyTracker : MonoBehaviour {
+public class EnemyTracker : MonoBehaviour
+{
+    Spawner _spawner;
 
-    [SerializeField]List<GameObject> _enemiesList = new List<GameObject>();
-    GameObject[] _enemiesInScene;
+    [SerializeField]List<GameObject> _enemies_List = new List<GameObject>();
+
     void Start()
     {
-        SetList();
+        _spawner = GameObject.FindObjectOfType<Spawner>();
     }
 
-    void SetList()
+    public void RemoveFromList()
     {
-        _enemiesInScene = GameObject.FindGameObjectsWithTag("Enemy");
-        for (int i = 0; i < _enemiesInScene.Length; i++)
+        if (_enemies_List.Count == 0)
+            return;
+        _enemies_List.RemoveAt(0);
+    }
+
+    void Update()
+    {
+        _enemies_List = _spawner.Objects_List;
+
+        if(_enemies_List.Count == 0 )
         {
-            _enemiesList.Add(_enemiesInScene[i]);
+            Debug.Log("YOU WIN!");
         }
+
     }
 }
-// W.I.P

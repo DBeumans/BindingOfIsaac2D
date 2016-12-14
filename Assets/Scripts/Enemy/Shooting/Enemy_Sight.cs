@@ -20,7 +20,6 @@ public class Enemy_Sight : MonoBehaviour {
         {
             if (_left)
             {
-                Debug.Log("Left");
                 _enemy_Shooting.Shoot("Left");
             }
             if (_right)

@@ -1,19 +1,20 @@
 fileFormatVersion: 2
-guid: 30734309fb5f2b64b8206e9047b9c501
-timeCreated: 1481724417
+guid: d0f97b75f002b5148b39089c3bcb7f3b
+timeCreated: 1481753645
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: enemy_walk_back_blood_2
-    21300002: enemy_walk_back_blood_3
-    21300004: enemy_walk_back_blood_1
-    21300006: enemy_walk_back_blood_4
-    21300008: enemy_walk_back_blood_5
-    21300010: enemy_walk_back_blood_6
-    21300012: enemy_walk_back_blood_7
-    21300014: enemy_walk_back_blood_9
-    21300016: enemy_walk_back_blood_10
-    21300018: enemy_walk_back_blood_8
+    21300000: enemy_back-front_blood_x4_0
+    21300002: enemy_back-front_blood_x4_2
+    21300004: enemy_back-front_blood_x4_5
+    21300006: enemy_back-front_blood_x4_6
+    21300008: enemy_back-front_blood_x4_7
+    21300010: enemy_back-front_blood_x4_10
+    21300012: enemy_back-front_blood_x4_12
+    21300014: enemy_back-front_blood_x4_14
+    21300016: enemy_back-front_blood_x4_16
+    21300018: enemy_back-front_blood_x4_20
+    21300020: enemy_back-front_blood_x4_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,132 +64,145 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_walk_back_blood_2
+      name: enemy_back-front_blood_x4_0
       rect:
         serializedVersion: 2
-        x: 188
-        y: 60
-        width: 104
-        height: 64
+        x: 124
+        y: 120
+        width: 12
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_3
+      name: enemy_back-front_blood_x4_2
       rect:
         serializedVersion: 2
         x: 304
         y: 60
-        width: 104
-        height: 64
+        width: 88
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_1
+      name: enemy_back-front_blood_x4_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
-        width: 104
-        height: 64
+        x: 748
+        y: 96
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_4
+      name: enemy_back-front_blood_x4_6
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 72
+        width: 68
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_back-front_blood_x4_7
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 92
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_back-front_blood_x4_10
       rect:
         serializedVersion: 2
         x: 428
         y: 56
         width: 104
-        height: 64
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_5
-      rect:
-        serializedVersion: 2
-        x: 568
-        y: 60
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_back_blood_6
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 60
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_back_blood_7
-      rect:
-        serializedVersion: 2
-        x: 812
-        y: 60
-        width: 104
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: enemy_walk_back_blood_9
+      name: enemy_back-front_blood_x4_12
       rect:
         serializedVersion: 2
         x: 1068
-        y: 52
-        width: 104
-        height: 64
+        y: 92
+        width: 12
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_10
+      name: enemy_back-front_blood_x4_14
       rect:
         serializedVersion: 2
         x: 1188
-        y: 60
-        width: 104
-        height: 64
+        y: 80
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_back-front_blood_x4_16
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 64
+        width: 80
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: enemy_walk_back_blood_8
+      name: enemy_back-front_blood_x4_20
       rect:
         serializedVersion: 2
-        x: 936
-        y: 56
-        width: 104
-        height: 64
+        x: 1192
+        y: 64
+        width: 4
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_back-front_blood_x4_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0

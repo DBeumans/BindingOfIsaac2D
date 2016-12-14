@@ -59,7 +59,7 @@ public class InputBehaviour : MonoBehaviour {
     public void KeyCheck()
     {
         // Keyboard
-        keySpace = Input.GetKey(_keySpace);
+        keySpace = Input.GetKeyDown(_keySpace);
         keyEscape = Input.GetKeyDown(_keyEscape);
         keyEnter = Input.GetKeyDown(_keyEnter);
 

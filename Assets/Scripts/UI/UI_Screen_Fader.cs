@@ -17,7 +17,6 @@ public class UI_Screen_Fader : MonoBehaviour {
     {
         _image.color = Color.clear;
         // to clear
-        StartCoroutine(ToClear());
     }
 
     public void ChangeScene()
@@ -38,15 +37,5 @@ public class UI_Screen_Fader : MonoBehaviour {
         _changeScene = true;
     }
 
-    IEnumerator ToClear()
-    {
-        _fillStep = _amountTofill * 16;
-        while (_image.color.a >= 0.01f)
-        {
-            _image.color = Color.Lerp(_image.color, Color.clear, _fillStep * Time.deltaTime);
-
-            yield return null;
-        }
-    }
 
 }

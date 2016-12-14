@@ -6,7 +6,7 @@ public class Player_Health : MonoBehaviour {
     float _maxHealth;
     float _currentHealth;
     bool _getDamage;
-    bool _isDead;
+    bool _isDead = false;
     bool _showLoseUI = false;
     public bool IsDead { get { return _isDead; } }
     public float CurrentHealth { get { return _currentHealth; } }
