@@ -34,6 +34,7 @@ public class Bullet_Collision : MonoBehaviour {
             {
                 if (other.gameObject.CompareTag("Player"))
                 {
+                    _bullet_AudioManager.Audio("Bullet_Hit_Wall");
                     _bulletAnimationBehaviour.Bullet_Destroyed();
                 }
             }
@@ -42,6 +43,7 @@ public class Bullet_Collision : MonoBehaviour {
             {
                 if(other.gameObject.CompareTag("Enemy"))
                 {
+                    _bullet_AudioManager.Audio("Bullet_Hit_Wall");
                     _bulletAnimationBehaviour.Bullet_Destroyed();
                 }
             }
