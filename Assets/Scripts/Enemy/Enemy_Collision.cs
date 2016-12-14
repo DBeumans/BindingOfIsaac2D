@@ -6,7 +6,6 @@ public class Enemy_Collision : MonoBehaviour {
     Player_Bullet _player_Bullet;
     Enemy_Health _enemy_Health;
     Enemy_Movement _enemy_Movement;
-
     void Start()
     {
         _player_Bullet = FindObjectOfType<Player_Bullet>();
@@ -18,7 +17,6 @@ public class Enemy_Collision : MonoBehaviour {
     {
         if(other.gameObject.tag == "Bullet")
         {
-
             if(this.gameObject.name == "Left")
             {
                 //if bullet touched left side of the enemy, apply force to it.

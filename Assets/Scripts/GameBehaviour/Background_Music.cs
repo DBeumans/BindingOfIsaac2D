@@ -8,7 +8,7 @@ public class Background_Music : MonoBehaviour {
     void Start()
     {
         _audioPlayer = GameObject.FindObjectOfType<AudioPlayer>();
-        _audioPlayer.PlayAudioSounds(_song, true, .2f);
+        _audioPlayer.PlayAudioSounds(_song, true, 1f);
     }
 
 }
