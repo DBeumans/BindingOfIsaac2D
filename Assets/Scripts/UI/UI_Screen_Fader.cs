@@ -51,7 +51,6 @@ public class UI_Screen_Fader : MonoBehaviour {
 
             yield return null;
         }
-        Debug.Log("Done");
     }
 
 }

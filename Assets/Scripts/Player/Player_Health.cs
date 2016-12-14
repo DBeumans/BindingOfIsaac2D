@@ -44,7 +44,7 @@ public class Player_Health : MonoBehaviour {
         // enemy is dead
         //do logic.
         Time.timeScale = 0;
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
     }
 
 }
