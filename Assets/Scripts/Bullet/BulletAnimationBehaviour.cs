@@ -26,7 +26,7 @@ public class BulletAnimationBehaviour : MonoBehaviour
     {
         while(!_animator.GetCurrentAnimatorStateInfo(0).IsName("Traan_Hit"))
         {
-            if (_animator.GetCurrentAnimatorClipInfo(0).Length >= _animator.GetCurrentAnimatorClipInfo(0).Length * _animator.GetCurrentAnimatorStateInfo(0).normalizedTime)
+            if (_animator.GetCurrentAnimatorClipInfo(0).Length >= _animator.GetCurrentAnimatorClipInfo(0).Length)
             {
                
             }

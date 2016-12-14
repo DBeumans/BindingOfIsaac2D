@@ -13,13 +13,9 @@ public class UI_Screen_Fader : MonoBehaviour {
     bool _changeScene = false;
     public bool GetChangeScene { get { return _changeScene; } }
 
-    void Awake()
-    {
-        _image.color = Color.black;
-    }
-
     void Start()
     {
+        _image.color = Color.clear;
         // to clear
         StartCoroutine(ToClear());
     }

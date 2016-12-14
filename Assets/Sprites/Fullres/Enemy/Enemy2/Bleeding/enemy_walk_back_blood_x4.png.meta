@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 30734309fb5f2b64b8206e9047b9c501
-timeCreated: 1481721381
+timeCreated: 1481724417
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -68,8 +68,8 @@ TextureImporter:
         serializedVersion: 2
         x: 188
         y: 60
-        width: 80
-        height: 56
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -81,8 +81,8 @@ TextureImporter:
         serializedVersion: 2
         x: 304
         y: 60
-        width: 88
-        height: 60
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -94,8 +94,8 @@ TextureImporter:
         serializedVersion: 2
         x: 80
         y: 64
-        width: 72
-        height: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,10 +105,10 @@ TextureImporter:
       name: enemy_walk_back_blood_4
       rect:
         serializedVersion: 2
-        x: 430
+        x: 428
         y: 56
-        width: 102
-        height: 60
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,8 +120,8 @@ TextureImporter:
         serializedVersion: 2
         x: 568
         y: 60
-        width: 88
-        height: 60
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,8 +133,8 @@ TextureImporter:
         serializedVersion: 2
         x: 692
         y: 60
-        width: 85
-        height: 56
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +146,8 @@ TextureImporter:
         serializedVersion: 2
         x: 812
         y: 60
-        width: 88
-        height: 56
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,8 +159,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1068
         y: 52
-        width: 84
-        height: 56
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +172,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1188
         y: 60
-        width: 88
-        height: 52
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,8 +185,8 @@ TextureImporter:
         serializedVersion: 2
         x: 936
         y: 56
-        width: 96
-        height: 48
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

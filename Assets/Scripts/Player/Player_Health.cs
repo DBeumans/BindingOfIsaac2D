@@ -7,10 +7,13 @@ public class Player_Health : MonoBehaviour {
     float _currentHealth;
     bool _getDamage;
     bool _isDead;
+    bool _showLoseUI = false;
     public bool IsDead { get { return _isDead; } }
     public float CurrentHealth { get { return _currentHealth; } }
     public bool RecieveDamage { get { return _getDamage; } }
-    void Awake()
+ 
+    public bool GetShowLoseUI { get { return _showLoseUI; } }
+    void Start()
     {
         _maxHealth =3f;
         _currentHealth = _maxHealth;
@@ -44,6 +47,7 @@ public class Player_Health : MonoBehaviour {
         // enemy is dead
         //do logic.
         Time.timeScale = 0;
+        _showLoseUI = true;
         //Destroy(this.gameObject);
     }
 

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a817ce8614f5f1d4a85548a110648bd5
-timeCreated: 1481721965
+timeCreated: 1481724373
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -66,10 +66,10 @@ TextureImporter:
       name: enemy_walk_left_blood_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 64
-        width: 64
-        height: 56
+        x: 39
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -79,10 +79,10 @@ TextureImporter:
       name: enemy_walk_left_blood_3
       rect:
         serializedVersion: 2
-        x: 288
-        y: 64
-        width: 88
-        height: 56
+        x: 325
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -92,10 +92,10 @@ TextureImporter:
       name: enemy_walk_left_blood_5
       rect:
         serializedVersion: 2
-        x: 556
+        x: 596
         y: 64
-        width: 96
-        height: 60
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,10 +105,10 @@ TextureImporter:
       name: enemy_walk_left_blood_9
       rect:
         serializedVersion: 2
-        x: 1052
-        y: 64
-        width: 92
-        height: 56
+        x: 1167
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,10 +118,10 @@ TextureImporter:
       name: enemy_walk_left_blood_10
       rect:
         serializedVersion: 2
-        x: 1184
-        y: 68
-        width: 72
-        height: 52
+        x: 1318
+        y: 63
+        width: 94
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: enemy_walk_left_blood_2
       rect:
         serializedVersion: 2
-        x: 184
-        y: 64
-        width: 64
-        height: 56
+        x: 182
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,10 +144,10 @@ TextureImporter:
       name: enemy_walk_left_blood_4
       rect:
         serializedVersion: 2
-        x: 416
-        y: 64
-        width: 100
-        height: 60
+        x: 445
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: enemy_walk_left_blood_6
       rect:
         serializedVersion: 2
-        x: 692
-        y: 64
-        width: 72
-        height: 60
+        x: 744
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: enemy_walk_left_blood_7
       rect:
         serializedVersion: 2
-        x: 804
-        y: 64
-        width: 76
-        height: 52
+        x: 895
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: enemy_walk_left_blood_8
       rect:
         serializedVersion: 2
-        x: 920
-        y: 64
-        width: 92
-        height: 52
+        x: 1024
+        y: 63
+        width: 104
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -13,11 +13,13 @@ public class ChangeScene : MonoBehaviour {
 
     void Update()
     {
+        if (_screenFader == null)
+            return;
         if (_screenFader.GetChangeScene)
             Change_Scene(1);
     }
 
-    void Change_Scene(int index)
+    public void Change_Scene(int index)
     {
         SceneManager.LoadScene(index);
     }
