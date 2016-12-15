@@ -13,13 +13,13 @@ public class UIBehaviour : MonoBehaviour {
 
     public bool LosePanelActive { get { return _lose_panel_active; } }
 
-    UI_InputCheck _ui_InputCheck;
+    Player_InputCheck _player_InputCheck;
 
     Player_Health _player_Health;
 
     void Start()
     {
-        _ui_InputCheck = GameObject.FindObjectOfType<UI_InputCheck>();
+        _player_InputCheck = GameObject.FindObjectOfType<Player_InputCheck>();
         _player_Health = GameObject.FindObjectOfType<Player_Health>();
 
     }
@@ -34,8 +34,10 @@ public class UIBehaviour : MonoBehaviour {
             Lost();
             return;
         }
-        if (_ui_InputCheck.IsPauzed)
+        if (_player_InputCheck.IsPauzed)
             _pauze_panel.SetActive(true);
+        if (!_player_InputCheck.IsPauzed)
+            _pauze_panel.SetActive(false);
     }
 
     void Lost()

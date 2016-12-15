@@ -11,11 +11,7 @@ public class UI_InputCheck : InputBehaviour {
 
     ChangeScene _changeScreen;
 
-    bool _isPauzed;
-
-    Scene  _currentScene;
-
-    public bool IsPauzed { get { return _isPauzed; } }
+    Scene  _currentScene;   
 
     void Start()
     {
@@ -42,8 +38,6 @@ public class UI_InputCheck : InputBehaviour {
         }
         if(_currentScene.name ==  "Game_Scene")
         {
-            if (base.Escape)
-                _isPauzed = true;
             if(_player_Health.IsDead)
             {
                 if (base.Enter)

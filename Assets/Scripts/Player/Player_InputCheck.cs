@@ -6,10 +6,16 @@ public class Player_InputCheck : InputBehaviour {
     //script reference here
 
     Player_Health _player_Health;
+    UI_InputCheck _ui_InputCheck;
     string _arrowPressed="";
+
+    bool _isPauzed = false;
+
+    public bool IsPauzed { get { return _isPauzed; } }
     void Start()
     {
         _player_Health = GetComponent<Player_Health>();
+        _ui_InputCheck = GameObject.FindObjectOfType<UI_InputCheck>();
     }
 
     // Update is called once per frame
@@ -20,11 +26,25 @@ public class Player_InputCheck : InputBehaviour {
 
         KeyCheck();
         ArrowsCheck();
+
         if (base.Escape)
         {
-            Debug.Log("pauze");
+            if(!_isPauzed)
+            {
+                _isPauzed = true;
+                Debug.Log("pauzed");
+                Time.timeScale = 0;
+            }
+            else if(_isPauzed)
+            {
+                _isPauzed = false;
+                Debug.Log("not pauzed");
+                Time.timeScale = 1;
+            }
+            
         }
-        if(base.Enter)
+
+        if (base.Enter)
         {
             Debug.Log("enter");
         }
