@@ -19,7 +19,7 @@ public class FX_Spawner : MonoBehaviour {
     [SerializeField]protected int _shown_FX_Gameobject;
 
     [SerializeField]protected List<GameObject> _fx_list = new List<GameObject>();
-
+    
     Transform _position;
     void Start()
     {
@@ -34,7 +34,7 @@ public class FX_Spawner : MonoBehaviour {
         _position = this.gameObject.transform;
         int randomFX = Random.Range(0, _fx_sprite.Length);
         GameObject fx = (GameObject)Instantiate(_fx_sprite[randomFX]) as GameObject;
-        fx.transform.position = _position.position;
+        fx.transform.position = _position.position;      
         fx.gameObject.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, _opacity);
         fx.gameObject.name = _fx_name;
         _fx_list.Add(fx);
