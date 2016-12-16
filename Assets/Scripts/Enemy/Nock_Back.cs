@@ -15,7 +15,7 @@ public class Nock_Back : MonoBehaviour {
 	private bool _right;
 	private bool _down;
 
-	private float _speed = 5;
+	private float _speed = 50;
 
 	void Start() {
 		_rigidbody2D = GetComponent<Rigidbody2D>();
@@ -27,22 +27,22 @@ public class Nock_Back : MonoBehaviour {
 		Triggered();
 
 		if (_up) {
-			_rigidbody2D.AddForce(-transform.up * _speed);
+			_rigidbody2D.AddForce(Vector2.down * _speed);
             _slowMovement.Coroutine();
             _up = false;
 		}
 		if (_left) {
-			_rigidbody2D.AddForce(transform.right * _speed);
+			_rigidbody2D.AddForce(Vector2.right * _speed);
             _slowMovement.Coroutine();
             _left = false;
 		}
 		if (_right) {
-			_rigidbody2D.AddForce(-transform.right * _speed);
+			_rigidbody2D.AddForce(Vector2.left * _speed);
             _slowMovement.Coroutine();
             _right = false;
 		}
 		if (_down) {
-			_rigidbody2D.AddForce(transform.up * _speed);
+			_rigidbody2D.AddForce(Vector2.up * _speed);
             _slowMovement.Coroutine();
             _down = false;
 		}

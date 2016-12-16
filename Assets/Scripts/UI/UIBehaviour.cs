@@ -63,7 +63,7 @@ public class UIBehaviour : MonoBehaviour {
     {
         _pauze_panel.SetActive(false);
         _lose_panel.SetActive(true);
-       // _animator.SetTrigger("lose_ui");
+        _animator.SetBool("lose_ui", true);
         _lose_panel_active = true;
              
     }
@@ -76,5 +76,6 @@ public class UIBehaviour : MonoBehaviour {
         _win_panel.SetActive(true);
         _animator.SetBool("win_ui",true);
         _win_panel_active = true;
+        Time.timeScale = 0;
     }
 }
