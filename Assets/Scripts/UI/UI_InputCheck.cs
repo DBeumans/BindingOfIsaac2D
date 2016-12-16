@@ -6,11 +6,9 @@ public class UI_InputCheck : InputBehaviour {
 
     UI_Screen_Fader _ui_Screen_Fader;
     Player_Health _player_Health;
-
     UI_ButtonSound _ui_ButtonSound;
-
+    EnemyTracker _enemyTracker;
     ChangeScene _changeScreen;
-
     Scene  _currentScene;   
 
     void Start()
@@ -19,6 +17,9 @@ public class UI_InputCheck : InputBehaviour {
         _player_Health = GameObject.FindObjectOfType<Player_Health>();
         _changeScreen = GameObject.FindObjectOfType<ChangeScene>();
         _ui_ButtonSound = GameObject.FindObjectOfType<UI_ButtonSound>();
+        _enemyTracker = GameObject.FindObjectOfType<EnemyTracker>();
+        if (_enemyTracker == null)
+            _enemyTracker = null;
         if (_player_Health == null)
             _player_Health = null;
     }
@@ -40,14 +41,19 @@ public class UI_InputCheck : InputBehaviour {
         {
             if(_player_Health.IsDead)
             {
-                if (base.Enter)
+                if (base.Space)
                     _changeScreen.Change_Scene(1);
                 if (base.Escape)
                     _changeScreen.Change_Scene(0);
+            } 
+            if(_enemyTracker.GameCleared)
+            {
+                if(base.Space)
+                {
+                    _changeScreen.Change_Scene(0);
+                }
             }
-            
         }
-
        
     }
 }
