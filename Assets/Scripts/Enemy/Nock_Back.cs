@@ -3,7 +3,8 @@ using System.Collections;
 
 public class Nock_Back : MonoBehaviour {
 	private Rigidbody2D _rigidbody2D;
-	
+	private SpeedBehaviour _slowMovement;
+
 	[SerializeField]private Get_Trigger up;
 	[SerializeField]private Get_Trigger left;
 	[SerializeField]private Get_Trigger right;
@@ -18,6 +19,8 @@ public class Nock_Back : MonoBehaviour {
 
 	void Start() {
 		_rigidbody2D = GetComponent<Rigidbody2D>();
+		_slowMovement = GetComponent<SpeedBehaviour>();
+		_slowMovement.Coroutine();
 	}
 
 	void FixedUpdate() {
@@ -39,6 +42,8 @@ public class Nock_Back : MonoBehaviour {
 			_rigidbody2D.AddForce(transform.up * _speed);
 			_down = false;
 		}
+
+		_slowMovement.rigidbody2D = _rigidbody2D;
 	}
 
 	void Triggered() {
