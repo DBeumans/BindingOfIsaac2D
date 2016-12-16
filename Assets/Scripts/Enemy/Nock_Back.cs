@@ -15,12 +15,12 @@ public class Nock_Back : MonoBehaviour {
 	private bool _right;
 	private bool _down;
 
-	private float _speed = 3;
+	private float _speed = 5;
 
 	void Start() {
 		_rigidbody2D = GetComponent<Rigidbody2D>();
 		_slowMovement = GetComponent<SpeedBehaviour>();
-		_slowMovement.Coroutine();
+		
 	}
 
 	void FixedUpdate() {
@@ -28,22 +28,26 @@ public class Nock_Back : MonoBehaviour {
 
 		if (_up) {
 			_rigidbody2D.AddForce(-transform.up * _speed);
-			_up = false;
+            _slowMovement.Coroutine();
+            _up = false;
 		}
 		if (_left) {
 			_rigidbody2D.AddForce(transform.right * _speed);
-			_left = false;
+            _slowMovement.Coroutine();
+            _left = false;
 		}
 		if (_right) {
 			_rigidbody2D.AddForce(-transform.right * _speed);
-			_right = false;
+            _slowMovement.Coroutine();
+            _right = false;
 		}
 		if (_down) {
 			_rigidbody2D.AddForce(transform.up * _speed);
-			_down = false;
+            _slowMovement.Coroutine();
+            _down = false;
 		}
 
-		_slowMovement.rigidbody2D = _rigidbody2D;
+		//_slowMovement.rigidbody2D = _rigidbody2D;
 	}
 
 	void Triggered() {
