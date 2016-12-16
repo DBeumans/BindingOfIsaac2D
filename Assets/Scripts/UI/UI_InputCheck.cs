@@ -9,7 +9,7 @@ public class UI_InputCheck : InputBehaviour {
     UI_ButtonSound _ui_ButtonSound;
     EnemyTracker _enemyTracker;
     ChangeScene _changeScreen;
-    Scene  _currentScene;   
+    Scene  _currentScene;
 
     void Start()
     {
@@ -22,7 +22,7 @@ public class UI_InputCheck : InputBehaviour {
             _enemyTracker = null;
         if (_player_Health == null)
             _player_Health = null;
-    }
+        }
 
     void Update()
     {

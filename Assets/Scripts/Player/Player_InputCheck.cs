@@ -22,7 +22,7 @@ public class Player_InputCheck : InputBehaviour {
             return;
 
         KeyCheck();
-
+        // kijken of er niet een andere screen actief is zoals win of lose.
         if (base.Escape)
         {
             if(!_isPauzed)
